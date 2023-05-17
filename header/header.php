@@ -7,8 +7,8 @@
 	================================================== -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Stability | Responsive HTML5 Template</title>
-	<meta name="description" content="Stability - Responsive HTML5 Template - 1.8.1">
+	<title>ICCN | Indonesia Career Center Network</title>
+	<meta name="description" content="iccn">
 	<meta name="author" content="http://themeforest.net/user/dan_fisher">
 	
 
@@ -58,7 +58,7 @@
 
 	<!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="shortcut icon" href="images/logoiccn.ico">
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
@@ -98,21 +98,20 @@
 							<button type="button" class="navbar-toggle">
 								<i class="fa fa-bars"></i>
 							</button>
-							<!-- Logo -->
-							<div class="logo">
-								<a href="index.html"><img src="images/logo.png" alt="Stability"></a> 
-								<!-- <h1><a href="index.html">Stability</a></h1> -->
-								<p class="tagline">Responsive HTML template</p>
-							</div>
-							<!-- Logo / End -->
+						<!-- Logo -->
+						<div class="logo">
+								 <h1><a href="index.html"> <a href="index.php"><img src="images/logoiccn.png" alt="iccn" height="50" width="70"></a> ICCN</a></h1>
+								 <p class="tagline">Indonesia Career Center </p>
+							 </div>
+							 <!-- Logo / End -->
 						</div><!-- end navbar-header -->
 
 						<div id="main-nav" class="navbar-collapse collapse">
 							<ul class="nav navbar-nav">
-								<li><a href="contacts.html">Home</a></li>
-								<li><a href="contacts.html">Artikel</a></li>
-								<li><a href="contacts.html">Berita</a></li>
-								<li><a href="contacts.html">Forum</a></li>
+								<li><a href="index.php">Home</a></li>
+								<li><a href="artikel.html">Artikel</a></li>
+								<li><a href="berita.html">Berita</a></li>
+								<li><a href="forum.html">Forum</a></li>
 
 								<!-- Mega Menu -->
 								<li class="dropdown">

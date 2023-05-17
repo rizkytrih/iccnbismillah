@@ -41,7 +41,7 @@
 											</a>
 											<span class="date">May 29, 2014</span>
 										</div>
-										<h4 class="title"><a href="#">Lorem ipsum dolor sit amet, consectet adipis elit</a></h4>
+										<h4 class="title"><a href="#">ini adalah berita</a></h4>
 									</div>
 								</div>
 						   </div>
@@ -710,7 +710,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-6 col-md-4">
-								Copyright &copy; 2014  <a href="index.html">STABILITY</a> &nbsp;| &nbsp;All Rights Reserved
+								Copyright &copy; 2023  <a href="index.html">ICCN</a> &nbsp;| &nbsp;All Rights Reserved
 							</div>
 							<div class="col-sm-6 col-md-8">
 								<div class="social-links-wrapper">
