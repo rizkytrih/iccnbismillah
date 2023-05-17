@@ -421,28 +421,6 @@
 						</div>
 						<aside class="sidebar col-md-3 col-md-pull-9 col-bordered">
 							<!-- Widget :: Latest Posts -->
-							<div class="latest-posts-widget widget widget__sidebar">
-								<h3 class="widget-title">Latest Posts</h3>
-								<div class="widget-content">
-									<ul class="latest-posts-list">
-										<li>
-											<figure class="thumbnail"><a href="#"><img src="http://placehold.it/60x60"></a></figure>
-											<span class="date">24/07/2013</span>
-											<h5 class="title"><a href="#">Duis placerat rhoncus arcu, sit amet aliquam leo</a></h5>
-										</li>
-										<li>
-											<figure class="thumbnail"><a href="#"><img src="http://placehold.it/60x60"></a></figure>
-											<span class="date">16/07/2013</span>
-											<h5 class="title"><a href="#">Mauris in arcu aliq, elementum nibh nec</a></h5>
-										</li>
-										<li>
-											<figure class="thumbnail"><a href="#"><img src="http://placehold.it/60x60"></a></figure>
-											<span class="date">14/07/2013</span>
-											<h5 class="title"><a href="#">Vestibulum in ligula rutrum faucibus interdum</a></h5>
-										</li>
-									</ul>
-								</div>
-							</div>
 							<!-- /Widget :: Latest Posts -->
 
 
