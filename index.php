@@ -16,9 +16,8 @@
 		<!-- Page Content -->
 		<section class="page-content">
 				<div class="container">
-
 					<div class="title-accent">
-						<h3>Berita Terbaru</h3>
+						<h3>Berita Pilihan</h3>
 					</div>
 					<div class="prev-next-holder text-right">
 						<a class="prev-btn" id="carousel-prev-alt"><i class="fa fa-angle-left"></i></a>
@@ -44,9 +43,9 @@
 										<h4 class="title"><a href="#">ini adalah berita 1</a></h4>
 									</div>
 								</div>
-						   </div>
+						</div>
 
-						   <div class="project-item">
+					<div class="project-item">
 								<div class="project-item-inner">
 									<figure class="alignnone project-img">
 										<img src="http://placehold.it/346x220" alt="" />
