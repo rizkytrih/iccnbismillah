@@ -29,7 +29,7 @@
 							<div class="project-item">
 								<div class="project-item-inner">
 									<figure class="alignnone project-img">
-										<img src="http://placehold.it/346x220" alt="" />
+										<img src="http://placehold.it/346x220" alt="gambar" />
 										<div class="overlay">
 											<a href="#" class="dlink"><i class="fa fa-link"></i></a>
 										</div>
