@@ -5,7 +5,6 @@
 <?php include 'header/header.php'; ?>
 </head>
 <body>
-
 		<!-- Header / End -->
 
 		<!-- Main -->
@@ -14,342 +13,548 @@
 		<!-- SLIDERNYO -->
 		<?php include 'header/slider.php'; ?>   
 
-			<!-- Page Content -->
-			<section class="page-content">
+		<!-- Page Content -->
+		<section class="page-content">
 				<div class="container">
+
+					<div class="title-accent">
+						<h3>Berita Terbaru</h3>
+					</div>
+					<div class="prev-next-holder text-right">
+						<a class="prev-btn" id="carousel-prev-alt"><i class="fa fa-angle-left"></i></a>
+						<a class="next-btn" id="carousel-next-alt"><i class="fa fa-angle-right"></i></a>
+					</div>
 					<div class="row">
-						<div class="col-md-4">
-							<div class="icon-box circled">
-								<div class="icon">
-									<i class="fa fa-arrows"></i>
-									<i class="fa fa-arrows bg-icon"></i>
+						<div class="owl-carousel owl-carousel__posts owl-carousel-3">
+							<div class="project-item">
+								<div class="project-item-inner">
+									<figure class="alignnone project-img">
+										<img src="http://placehold.it/346x220" alt="" />
+										<div class="overlay">
+											<a href="#" class="dlink"><i class="fa fa-link"></i></a>
+										</div>
+									</figure>
+									<div class="project-desc">
+										<div class="meta">
+											<a href="#" class="comments">
+												<i class="fa fa-comments"></i> 2
+											</a>
+											<span class="date">May 29, 2014</span>
+										</div>
+										<h4 class="title"><a href="#">Lorem ipsum dolor sit amet, consectet adipis elit</a></h4>
+									</div>
 								</div>
-								<div class="icon-box-body">
-									<h4>Responsive Web Design</h4>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi ac mi Ut egestas libero sit amet risus elementum rhoncus, elit id varius.
+						   </div>
+						
+						   <div class="project-item">
+								<div class="project-item-inner">
+									<figure class="alignnone project-img">
+										<img src="http://placehold.it/346x220" alt="" />
+										<div class="overlay">
+											<a href="#" class="dlink"><i class="fa fa-link"></i></a>
+										</div>
+									</figure>
+									<div class="project-desc">
+										<div class="meta">
+											<a href="#" class="comments">
+												<i class="fa fa-comments"></i> 2
+											</a>
+											<span class="date">May 29, 2014</span>
+										</div>
+										<h4 class="title"><a href="#">Lorem ipsum dolor sit amet, consectet adipis elit</a></h4>
+									</div>
 								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="icon-box circled">
-								<div class="icon">
-									<i class="fa fa-briefcase"></i>
-									<i class="fa fa-briefcase bg-icon"></i>
+						   </div>
+						
+						   <div class="project-item">
+								<div class="project-item-inner">
+									<figure class="alignnone project-img">
+										<img src="http://placehold.it/346x220" alt="" />
+										<div class="overlay">
+											<a href="#" class="dlink"><i class="fa fa-link"></i></a>
+										</div>
+									</figure>
+									<div class="project-desc">
+										<div class="meta">
+											<a href="#" class="comments">
+												<i class="fa fa-comments"></i> 2
+											</a>
+											<span class="date">May 29, 2014</span>
+										</div>
+										<h4 class="title"><a href="#">Lorem ipsum dolor sit amet, consectet adipis elit</a></h4>
+									</div>
 								</div>
-								<div class="icon-box-body">
-									<h4>Built on Bootstrap</h4>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi ac mi Ut egestas libero sit amet risus elementum rhoncus, elit id varius.
+						   </div>
+						
+						   <div class="project-item">
+								<div class="project-item-inner">
+									<figure class="alignnone project-img">
+										<img src="http://placehold.it/346x220" alt="" />
+										<div class="overlay">
+											<a href="#" class="dlink"><i class="fa fa-link"></i></a>
+										</div>
+									</figure>
+									<div class="project-desc">
+										<div class="meta">
+											<a href="#" class="comments">
+												<i class="fa fa-comments"></i> 2
+											</a>
+											<span class="date">May 29, 2014</span>
+										</div>
+										<h4 class="title"><a href="#">Lorem ipsum dolor sit amet, consectet adipis elit</a></h4>
+									</div>
 								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="icon-box circled">
-								<div class="icon">
-									<i class="fa fa-file-text-o"></i>
-									<i class="fa fa-file-text-o bg-icon"></i>
+						   </div>
+						
+						   <div class="project-item">
+								<div class="project-item-inner">
+									<figure class="alignnone project-img">
+										<img src="http://placehold.it/346x220" alt="" />
+										<div class="overlay">
+											<a href="#" class="dlink"><i class="fa fa-link"></i></a>
+										</div>
+									</figure>
+									<div class="project-desc">
+										<div class="meta">
+											<a href="#" class="comments">
+												<i class="fa fa-comments"></i> 2
+											</a>
+											<span class="date">May 29, 2014</span>
+										</div>
+										<h4 class="title"><a href="#">Lorem ipsum dolor sit amet, consectet adipis elit</a></h4>
+									</div>
 								</div>
-								<div class="icon-box-body">
-									<h4>Layered PSD</h4>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi ac mi Ut egestas libero sit amet risus elementum rhoncus, elit id varius.
+						   </div>
+						
+						   <div class="project-item">
+								<div class="project-item-inner">
+									<figure class="alignnone project-img">
+										<img src="http://placehold.it/346x220" alt="" />
+										<div class="overlay">
+											<a href="#" class="dlink"><i class="fa fa-link"></i></a>
+										</div>
+									</figure>
+									<div class="project-desc">
+										<div class="meta">
+											<a href="#" class="comments">
+												<i class="fa fa-comments"></i> 2
+											</a>
+											<span class="date">May 29, 2014</span>
+										</div>
+										<h4 class="title"><a href="#">Lorem ipsum dolor sit amet, consectet adipis elit</a></h4>
+									</div>
 								</div>
-							</div>
+						   </div>
+						
+						   <div class="project-item">
+								<div class="project-item-inner">
+									<figure class="alignnone project-img">
+										<img src="http://placehold.it/346x220" alt="" />
+										<div class="overlay">
+											<a href="#" class="dlink"><i class="fa fa-link"></i></a>
+										</div>
+									</figure>
+									<div class="project-desc">
+										<div class="meta">
+											<a href="#" class="comments">
+												<i class="fa fa-comments"></i> 2
+											</a>
+											<span class="date">May 29, 2014</span>
+										</div>
+										<h4 class="title"><a href="#">Lorem ipsum dolor sit amet, consectet adipis elit</a></h4>
+									</div>
+								</div>
+						   </div>
+						
+						   <div class="project-item">
+								<div class="project-item-inner">
+									<figure class="alignnone project-img">
+										<img src="http://placehold.it/346x220" alt="" />
+										<div class="overlay">
+											<a href="#" class="dlink"><i class="fa fa-link"></i></a>
+										</div>
+									</figure>
+									<div class="project-desc">
+										<div class="meta">
+											<a href="#" class="comments">
+												<i class="fa fa-comments"></i> 2
+											</a>
+											<span class="date">May 29, 2014</span>
+										</div>
+										<h4 class="title"><a href="#">Lorem ipsum dolor sit amet, consectet adipis elit</a></h4>
+									</div>
+								</div>
+						   </div>
+						
 						</div>
 					</div>
 
-					<div class="spacer-lg"></div>
+					<hr class="lg">
 
 					<div class="row">
-						<div class="col-md-4">
-							<div class="icon-box circled">
-								<div class="icon">
-									<i class="fa fa-rocket"></i>
-									<i class="fa fa-rocket bg-icon"></i>
+						<div class="content col-md-8 col-md-offset-1 col-md-push-3">
+
+							<!-- World News Category -->
+							<h2>World News</h2>
+							<div class="row">
+								<div class="col-md-6">
+									<!-- Post (Standard Format) -->
+									<article class="entry entry__standard entry__small entry__single">
+										<figure class="alignnone entry-thumb">
+											<a href="#"><img src="http://placehold.it/350x220" alt=""></a>
+										</figure>
+										<header class="entry-header entry-header__small">
+											<h2><a href="blog-post.html">Standard Post Format (with Image)</a></h2>
+											<div class="entry-meta">
+												<span class="entry-date">24/12/2013</span>
+												<span class="entry-comments"><a href="#">0 Comments</a></span>
+												<span class="entry-category">in <a href="#">Latest News</a></span>
+												<span class="entry-author">by <a href="#">Dan Fisher</a></span>
+											</div>
+										</header>
+										
+										<div class="excerpt">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi ac mi malesuada vestibulum.
+										</div>
+										<footer class="entry-footer">
+											<a href="#" class="btn btn-default btn-sm">Read More</a>
+										</footer>
+									</article>
+									<!-- Post (Standard Format) / End -->
 								</div>
-								<div class="icon-box-body">
-									<h4>Ready to Use</h4>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi ac mi Ut egestas libero sit amet risus elementum rhoncus, elit id varius.
+								<div class="col-md-6">
+									<!-- Post (Standard Format) -->
+									<article class="entry entry__standard entry__small entry__single">
+										<figure class="alignnone entry-thumb">
+											<a href="#"><img src="http://placehold.it/350x220" alt=""></a>
+										</figure>
+										<header class="entry-header entry-header__small">
+											<h2><a href="blog-post.html">Standard Post Format (with Image)</a></h2>
+											<div class="entry-meta">
+												<span class="entry-date">24/12/2013</span>
+												<span class="entry-comments"><a href="#">0 Comments</a></span>
+												<span class="entry-category">in <a href="#">Latest News</a></span>
+												<span class="entry-author">by <a href="#">Dan Fisher</a></span>
+											</div>
+										</header>
+										
+										<div class="excerpt">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi ac mi malesuada vestibulum.
+										</div>
+										<footer class="entry-footer">
+											<a href="#" class="btn btn-default btn-sm">Read More</a>
+										</footer>
+									</article>
+									<!-- Post (Standard Format) / End -->
 								</div>
 							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="icon-box circled">
-								<div class="icon">
-									<i class="fa fa-user"></i>
-									<i class="fa fa-user bg-icon"></i>
+							<div class="spacer"></div>
+							<div class="row">
+								<div class="col-md-6">
+									<!-- Post (Standard Format) -->
+									<article class="entry entry__standard entry__small entry__single">
+										<figure class="alignnone entry-thumb">
+											<a href="#"><img src="http://placehold.it/350x220" alt=""></a>
+										</figure>
+										<header class="entry-header entry-header__small">
+											<h2><a href="blog-post.html">Standard Post Format (with Image)</a></h2>
+											<div class="entry-meta">
+												<span class="entry-date">24/12/2013</span>
+												<span class="entry-comments"><a href="#">0 Comments</a></span>
+												<span class="entry-category">in <a href="#">Latest News</a></span>
+												<span class="entry-author">by <a href="#">Dan Fisher</a></span>
+											</div>
+										</header>
+										
+										<div class="excerpt">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi ac mi malesuada vestibulum.
+										</div>
+										<footer class="entry-footer">
+											<a href="#" class="btn btn-default btn-sm">Read More</a>
+										</footer>
+									</article>
+									<!-- Post (Standard Format) / End -->
 								</div>
-								<div class="icon-box-body">
-									<h4>Individual Approach</h4>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi ac mi Ut egestas libero sit amet risus elementum rhoncus, elit id varius.
+								<div class="col-md-6">
+									<!-- Post (Standard Format) -->
+									<article class="entry entry__standard entry__small entry__single">
+										<figure class="alignnone entry-thumb">
+											<a href="#"><img src="http://placehold.it/350x220" alt=""></a>
+										</figure>
+										<header class="entry-header entry-header__small">
+											<h2><a href="blog-post.html">Standard Post Format (with Image)</a></h2>
+											<div class="entry-meta">
+												<span class="entry-date">24/12/2013</span>
+												<span class="entry-comments"><a href="#">0 Comments</a></span>
+												<span class="entry-category">in <a href="#">Latest News</a></span>
+												<span class="entry-author">by <a href="#">Dan Fisher</a></span>
+											</div>
+										</header>
+										
+										<div class="excerpt">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi ac mi malesuada vestibulum.
+										</div>
+										<footer class="entry-footer">
+											<a href="#" class="btn btn-default btn-sm">Read More</a>
+										</footer>
+									</article>
+									<!-- Post (Standard Format) / End -->
 								</div>
 							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="icon-box circled">
-								<div class="icon">
-									<i class="fa fa-heart"></i>
-									<i class="fa fa-heart bg-icon"></i>
+							<div class="spacer"></div>
+							<div class="row">
+								<div class="col-md-6">
+									<!-- Post (Standard Format) -->
+									<article class="entry entry__standard entry__small entry__single">
+										<figure class="alignnone entry-thumb">
+											<a href="#"><img src="http://placehold.it/350x220" alt=""></a>
+										</figure>
+										<header class="entry-header entry-header__small">
+											<h2><a href="blog-post.html">Standard Post Format (with Image)</a></h2>
+											<div class="entry-meta">
+												<span class="entry-date">24/12/2013</span>
+												<span class="entry-comments"><a href="#">0 Comments</a></span>
+												<span class="entry-category">in <a href="#">Latest News</a></span>
+												<span class="entry-author">by <a href="#">Dan Fisher</a></span>
+											</div>
+										</header>
+										
+										<div class="excerpt">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi ac mi malesuada vestibulum.
+										</div>
+										<footer class="entry-footer">
+											<a href="#" class="btn btn-default btn-sm">Read More</a>
+										</footer>
+									</article>
+									<!-- Post (Standard Format) / End -->
 								</div>
-								<div class="icon-box-body">
-									<h4>Made with Passion</h4>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi ac mi Ut egestas libero sit amet risus elementum rhoncus, elit id varius.
+								<div class="col-md-6">
+									<!-- Post (Standard Format) -->
+									<article class="entry entry__standard entry__small entry__single">
+										<figure class="alignnone entry-thumb">
+											<a href="#"><img src="http://placehold.it/350x220" alt=""></a>
+										</figure>
+										<header class="entry-header entry-header__small">
+											<h2><a href="blog-post.html">Standard Post Format (with Image)</a></h2>
+											<div class="entry-meta">
+												<span class="entry-date">24/12/2013</span>
+												<span class="entry-comments"><a href="#">0 Comments</a></span>
+												<span class="entry-category">in <a href="#">Latest News</a></span>
+												<span class="entry-author">by <a href="#">Dan Fisher</a></span>
+											</div>
+										</header>
+										
+										<div class="excerpt">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi ac mi malesuada vestibulum.
+										</div>
+										<footer class="entry-footer">
+											<a href="#" class="btn btn-default btn-sm">Read More</a>
+										</footer>
+									</article>
+									<!-- Post (Standard Format) / End -->
 								</div>
 							</div>
-						</div>
-					</div>
+							<div class="spacer"></div>
+							<div class="row">
+								<div class="col-md-6">
+									<!-- Post (Standard Format) -->
+									<article class="entry entry__standard entry__small entry__single">
+										<figure class="alignnone entry-thumb">
+											<a href="#"><img src="http://placehold.it/350x220" alt=""></a>
+										</figure>
+										<header class="entry-header entry-header__small">
+											<h2><a href="blog-post.html">Standard Post Format (with Image)</a></h2>
+											<div class="entry-meta">
+												<span class="entry-date">24/12/2013</span>
+												<span class="entry-comments"><a href="#">0 Comments</a></span>
+												<span class="entry-category">in <a href="#">Latest News</a></span>
+												<span class="entry-author">by <a href="#">Dan Fisher</a></span>
+											</div>
+										</header>
+										
+										<div class="excerpt">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi ac mi malesuada vestibulum.
+										</div>
+										<footer class="entry-footer">
+											<a href="#" class="btn btn-default btn-sm">Read More</a>
+										</footer>
+									</article>
+									<!-- Post (Standard Format) / End -->
+								</div>
+								<div class="col-md-6">
+									<!-- Post (Standard Format) -->
+									<article class="entry entry__standard entry__small entry__single">
+										<figure class="alignnone entry-thumb">
+											<a href="#"><img src="http://placehold.it/350x220" alt=""></a>
+										</figure>
+										<header class="entry-header entry-header__small">
+											<h2><a href="blog-post.html">Standard Post Format (with Image)</a></h2>
+											<div class="entry-meta">
+												<span class="entry-date">24/12/2013</span>
+												<span class="entry-comments"><a href="#">0 Comments</a></span>
+												<span class="entry-category">in <a href="#">Latest News</a></span>
+												<span class="entry-author">by <a href="#">Dan Fisher</a></span>
+											</div>
+										</header>
+										
+										<div class="excerpt">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi ac mi malesuada vestibulum.
+										</div>
+										<footer class="entry-footer">
+											<a href="#" class="btn btn-default btn-sm">Read More</a>
+										</footer>
+									</article>
+									<!-- Post (Standard Format) / End -->
+								</div>
+							</div>
+							<!-- World News Category / End -->
 
-
-					<div class="spacer-xxxl"></div>
-
-				</div>
-
-				<!-- Projects -->
-				<div class="title-decorated" data-animation="fadeInUp">
-					<h1>Our Latest <span>Projects</span></h1>
-				</div>
-				<!-- Project Feed -->
-				<div class="project-feed project-feed__fullw">
-				  <div class="project-item design logo">
-						<div class="project-item-inner">
-							<figure class="alignnone project-img effect-winston">
-								<img src="http://placehold.it/320x320" alt="" />
-								<figcaption>
-									<h2>Dolor sit amet</h2>
-									<p>
-										<a href="portfolio-single.html" class=""><i class="fa fa-fw fa-external-link fa-lg"></i></a>
-										<a href="http://placehold.it/700x430" class="popup-link"><i class="fa fa-fw fa-search fa-lg"></i></a>
-										<a href="#"><i class="fa fa-fw fa-envelope-o fa-lg"></i></a>
-									</p>
-								</figcaption>	
-							</figure>
-						</div>
-				  </div>
-
-				  <div class="project-item design logo">
-						<div class="project-item-inner">
-							<figure class="alignnone project-img effect-winston">
-								<img src="http://placehold.it/320x320" alt="" />
-								<figcaption>
-									<h2>Integer porttitor</h2>
-									<p>
-										<a href="portfolio-single.html" class=""><i class="fa fa-fw fa-external-link fa-lg"></i></a>
-										<a href="http://placehold.it/700x430" class="popup-link"><i class="fa fa-fw fa-search fa-lg"></i></a>
-										<a href="#"><i class="fa fa-fw fa-envelope-o fa-lg"></i></a>
-									</p>
-								</figcaption>	
-							</figure>
-						</div>
-				  </div>
-
-				  <div class="project-item design logo">
-						<div class="project-item-inner">
-							<figure class="alignnone project-img effect-winston">
-								<img src="http://placehold.it/320x320" alt="" />
-								<figcaption>
-									<h2>Morbi dolor</h2>
-									<p>
-										<a href="portfolio-single.html" class=""><i class="fa fa-fw fa-external-link fa-lg"></i></a>
-										<a href="http://placehold.it/700x430" class="popup-link"><i class="fa fa-fw fa-search fa-lg"></i></a>
-										<a href="#"><i class="fa fa-fw fa-envelope-o fa-lg"></i></a>
-									</p>
-								</figcaption>	
-							</figure>
-						</div>
-				  </div>
-
-				  <div class="project-item design logo">
-						<div class="project-item-inner">
-							<figure class="alignnone project-img effect-winston">
-								<img src="http://placehold.it/320x320" alt="" />
-								<figcaption>
-									<h2>Nulla cursus aliquet</h2>
-									<p>
-										<a href="portfolio-single.html" class=""><i class="fa fa-fw fa-external-link fa-lg"></i></a>
-										<a href="http://placehold.it/700x430" class="popup-link"><i class="fa fa-fw fa-search fa-lg"></i></a>
-										<a href="#"><i class="fa fa-fw fa-envelope-o fa-lg"></i></a>
-									</p>
-								</figcaption>	
-							</figure>
-						</div>
-				  </div>
-
-				  <div class="project-item design logo">
-						<div class="project-item-inner">
-							<figure class="alignnone project-img effect-winston">
-								<img src="http://placehold.it/320x320" alt="" />
-								<figcaption>
-									<h2>Donec et nulla</h2>
-									<p>
-										<a href="portfolio-single.html" class=""><i class="fa fa-fw fa-external-link fa-lg"></i></a>
-										<a href="http://placehold.it/700x430" class="popup-link"><i class="fa fa-fw fa-search fa-lg"></i></a>
-										<a href="#"><i class="fa fa-fw fa-envelope-o fa-lg"></i></a>
-									</p>
-								</figcaption>	
-							</figure>
-						</div>
-				  </div>
-				</div>
-				<!-- Project Feed / End -->
-				<!-- Projects / End -->
-
-				<div class="spacer-lg"></div>
-
-				<div class="container">
-					<div class="row">
-						<div class="col-md-4 col-md-offset-1">
-							<img src="images/samples/person4.png" alt="" class="img-responsive">
-						</div>
-						<div class="col-md-6 col-md-offset-1">
 							<div class="spacer-lg"></div>
-							<div class="title-accent">
-								<h3>Create your own Personality!</h3>
-							</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eleifend felis et massa cursus, non tincidunt odio posuere. Sed lacinia consequat porttitor. Ut vitae ligula ut erat maximus vestibulum.</p>
 
-							<p>Duis varius neque orci, vel aliquet urna eleifend in. Nullam porta mi eu velit egestas, non sollicitudin mi rutrum. Vestibulum non urna ut est blandit pretium. Nulla vehicula, lacus ac pellentesque porttitor, arcu nunc scelerisque dui, vitae sodales justo odio in tortor.</p>
+							<ul class="pagination-custom list-unstyled list-inline">
+								<li><a href="#" class="btn btn-sm btn-primary">1</a></li>
+								<li><a href="#" class="btn btn-sm btn-default">2</a></li>
+								<li><a href="#" class="btn btn-sm btn-default">3</a></li>
+								<li><a href="#" class="btn btn-sm btn-default">&raquo;</a></li>
+							</ul>
 
-							<div class="list">
-								<ul>
-									<li>Fully Responsive Design</li>
-									<li>13 Home Page Layouts</li>
-									<li>6 Header</li>
-									<li>5 Footers</li>
-									<li>6 Blog Layouts</li>
-									<li>Unlimited Colors Variations</li>
-									<li>Clean Code</li>
-								</ul>
-							</div>
-
-							<a href="#" class="btn btn-primary">Learn More</a>
 						</div>
+						<aside class="sidebar col-md-3 col-md-pull-9 col-bordered">
+							<!-- Widget :: Tabbed -->
+							<div class="tabbed-widget widget widget__sidebar">
+								<h3 class="widget-title">Tabbed Content</h3>
+								<div class="widget-content">
+									<div class="tabs">
+										<!-- Nav tabs -->
+										<ul class="nav nav-tabs">
+											<li class="active"><a href="#tab-1" data-toggle="tab">Popular</a></li>
+											<li><a href="#tab-2" data-toggle="tab">Recent</a></li>
+											<li><a href="#tab-3" data-toggle="tab"><i class="fa fa-comments fa-lg"></i></a></li>
+										</ul>
+										<!-- Tab panes -->
+										<div class="tab-content">
+											<div class="tab-pane fade in active" id="tab-1">
+												<ul class="latest-posts-list">
+													<li>
+														<figure class="thumbnail"><a href="#"><img src="http://placehold.it/60x60"></a></figure>
+														<span class="date">24/07/2013</span>
+														<h5 class="title"><a href="#">Duis placerat rhoncus arcu sit amet aliquam</a></h5>
+													</li>
+													<li>
+														<figure class="thumbnail"><a href="#"><img src="http://placehold.it/60x60"></a></figure>
+														<span class="date">16/07/2013</span>
+														<h5 class="title"><a href="#">Mauris in arcu aliq, elementum nibh nec</a></h5>
+													</li>
+													<li>
+														<figure class="thumbnail"><a href="#"><img src="http://placehold.it/60x60"></a></figure>
+														<span class="date">14/07/2013</span>
+														<h5 class="title"><a href="#">Vestibulum in ligula rutrum faucibus</a></h5>
+													</li>
+												</ul>
+											</div>
+											<div class="tab-pane fade" id="tab-2">
+												<ul class="latest-posts-list">
+													<li>
+														<figure class="thumbnail"><a href="#"><img src="http://placehold.it/60x60"></a></figure>
+														<span class="date">24/07/2013</span>
+														<h5 class="title"><a href="#">Duis placerat rhoncus arcu sit amet aliquam</a></h5>
+													</li>
+													<li>
+														<figure class="thumbnail"><a href="#"><img src="http://placehold.it/60x60"></a></figure>
+														<span class="date">16/07/2013</span>
+														<h5 class="title"><a href="#">Mauris in arcu aliq, elementum nibh nec</a></h5>
+													</li>
+													<li>
+														<figure class="thumbnail"><a href="#"><img src="http://placehold.it/60x60"></a></figure>
+														<span class="date">14/07/2013</span>
+														<h5 class="title"><a href="#">Vestibulum in ligula rutrum faucibus</a></h5>
+													</li>
+												</ul>
+											</div>
+											<div class="tab-pane fade" id="tab-3">
+												<ul class="latest-posts-list">
+													<li>
+														<figure class="thumbnail"><a href="#"><img src="http://placehold.it/60x60"></a></figure>
+														<span class="date">admin says:</span>
+														<h5 class="title"><a href="#">Duis placerat rhoncus arcu sit amet aliquam</a></h5>
+													</li>
+													<li>
+														<figure class="thumbnail"><a href="#"><img src="http://placehold.it/60x60"></a></figure>
+														<span class="date">admin says:</span>
+														<h5 class="title"><a href="#">Mauris in arcu aliq, elementum nibh nec</a></h5>
+													</li>
+													<li>
+														<figure class="thumbnail"><a href="#"><img src="http://placehold.it/60x60"></a></figure>
+														<span class="date">admin says:</span>
+														<h5 class="title"><a href="#">Vestibulum in ligula rutrum faucibus</a></h5>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /Widget :: Tabbed -->
+
+
+							<!-- Widget :: Flickr -->
+							<div class="widget_flickr widget widget__sidebar">
+								<h3 class="widget-title">Flickr</h3>
+								<div class="widget-content">
+									<!-- Flickr images will appear here -->
+									<ul class="flickr-feed"></ul>
+								</div>
+							</div>
+							<!-- /Widget :: Flickr -->
+
+
+							<!-- Widget :: Latest Posts -->
+							<div class="latest-posts-widget widget widget__sidebar">
+								<h3 class="widget-title">Latest Posts</h3>
+								<div class="widget-content">
+									<ul class="latest-posts-list">
+										<li>
+											<figure class="thumbnail"><a href="#"><img src="http://placehold.it/60x60"></a></figure>
+											<span class="date">24/07/2013</span>
+											<h5 class="title"><a href="#">Duis placerat rhoncus arcu, sit amet aliquam leo</a></h5>
+										</li>
+										<li>
+											<figure class="thumbnail"><a href="#"><img src="http://placehold.it/60x60"></a></figure>
+											<span class="date">16/07/2013</span>
+											<h5 class="title"><a href="#">Mauris in arcu aliq, elementum nibh nec</a></h5>
+										</li>
+										<li>
+											<figure class="thumbnail"><a href="#"><img src="http://placehold.it/60x60"></a></figure>
+											<span class="date">14/07/2013</span>
+											<h5 class="title"><a href="#">Vestibulum in ligula rutrum faucibus interdum</a></h5>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- /Widget :: Latest Posts -->
+
+
+							<!-- Widget :: Categories -->
+							<div class="widget_categories widget widget__sidebar">
+								<h3 class="widget-title">Categories</h3>
+								<div class="widget-content">
+									<ul>
+										<li><a href="#">Web Design</a> (3)</li>
+										<li><a href="#">Illustration</a> (10)</li>
+										<li><a href="#">Logo Design</a> (12)</li>
+										<li><a href="#">Branding &amp; Identity</a> (8)</li>
+										<li><a href="#">WordPress</a> (3)</li>
+										<li><a href="#">HTML5 &amp; CSS3</a> (5)</li>
+										<li><a href="#">PHP/MySQl</a> (3)</li>
+									</ul>
+								</div>
+							</div>
+							<!-- /Widget :: Categories -->
+
+						</aside>
 					</div>
-
-					<!-- Featured Section -->
-					<section class="featured-section featured-section__lg-padding parallax-bg bg2" data-stellar-ratio="2" data-stellar-background-ratio="0.5">
-						<div class="row">
-							<div class="col-sm-6 col-md-3">
-								<div class="circled-counter" 
-									data-dimension="190" 
-									data-text="25"
-									data-info="Projects"
-									data-width="2"
-									data-fontsize="28"
-									data-percent="78"
-									data-fgcolor="#ccc"
-									data-bgcolor="transparent"
-									data-icon="fa-briefcase"></div>
-							</div>
-							<div class="col-sm-6 col-md-3">
-								<div class="circled-counter" 
-									data-dimension="190" 
-									data-text="12"
-									data-info="Staff"
-									data-width="2"
-									data-fontsize="28"
-									data-percent="63"
-									data-fgcolor="#ccc"
-									data-bgcolor="transparent"
-									data-icon="fa-users"></div>
-							</div>
-							<div class="col-sm-6 col-md-3">
-								<div class="circled-counter" 
-									data-dimension="190" 
-									data-text="17"
-									data-info="Awards"
-									data-width="2"
-									data-fontsize="28"
-									data-percent="92"
-									data-fgcolor="#ccc"
-									data-bgcolor="transparent"
-									data-icon="fa-trophy"></div>
-							</div>
-							<div class="col-sm-6 col-md-3">
-								<div class="circled-counter" 
-									data-dimension="190" 
-									data-text="203"
-									data-info="Clients"
-									data-width="2"
-									data-fontsize="28"
-									data-percent="82"
-									data-fgcolor="#ccc"
-									data-bgcolor="transparent"
-									data-icon="fa-child"></div>
-							</div>
-						</div>
-					</section>
-					<!-- Featured Section / End -->
-
-					<div class="title-decorated" data-animation="fadeInUp">
-						<h1><span>Clients</span> we've worked</h1>
-					</div>
-					<ul class="partners__logos row">
-						<li data-animation="fadeInDown">
-							<a href="#"><img src="images/samples/client-logo1.png" alt=""></a>
-						</li>
-						<li data-animation="fadeInDown" data-animation-delay="100">
-							<a href="#"><img src="images/samples/client-logo2.png" alt=""></a>
-						</li>
-						<li data-animation="fadeInDown" data-animation-delay="300">
-							<a href="#"><img src="images/samples/client-logo3.png" alt=""></a>
-						</li>
-						<li data-animation="fadeInDown" data-animation-delay="400">
-							<a href="#"><img src="images/samples/client-logo4.png" alt=""></a>
-						</li>
-						<li data-animation="fadeInDown" data-animation-delay="500">
-							<a href="#"><img src="images/samples/client-logo1.png" alt=""></a>
-						</li>
-						<li data-animation="fadeInDown" data-animation-delay="600">
-							<a href="#"><img src="images/samples/client-logo2.png" alt=""></a>
-						</li>
-						<li data-animation="fadeInDown" data-animation-delay="700">
-							<a href="#"><img src="images/samples/client-logo3.png" alt=""></a>
-						</li>
-						<li data-animation="fadeInDown" data-animation-delay="800">
-							<a href="#"><img src="images/samples/client-logo4.png" alt=""></a>
-						</li>
-						<li data-animation="fadeInDown" data-animation-delay="900">
-							<a href="#"><img src="images/samples/client-logo1.png" alt=""></a>
-						</li>
-						<li data-animation="fadeInDown" data-animation-delay="1000">
-							<a href="#"><img src="images/samples/client-logo2.png" alt=""></a>
-						</li>
-					</ul>
-
-
-					<div class="spacer-xxl"></div>
-
-
-					<!-- Testimonials -->
-					<div class="container">
-						<section class="section-light section-bottom" data-animation="fadeInUp">
-							<!-- Testimonials Slider -->
-							<div class="owl-carousel owl-theme owl-slider owl-testi">
-								<div class="item">
-									<blockquote>
-										<p>In vitae lacus consequat, commodo tortor sed, porttitor dolor. Morbi eu nisl ultrices, pulvinar ligula vitae, ullamcorper massa. Sed malesuada ut magna vitae scelerisque.</p>
-									</blockquote>
-									<cite>John Doe, Themeforest</cite>
-								</div>
-								<div class="item">
-									<blockquote>
-										<p>In vitae lacus consequat, commodo tortor sed, porttitor dolor. Morbi eu nisl ultrices, pulvinar ligula vitae, ullamcorper massa. Sed malesuada ut magna vitae scelerisque.</p>
-									</blockquote>
-									<cite>Michael Smith, Photodune</cite>
-								</div>
-								<div class="item">
-									<blockquote>
-										<p>In vitae lacus consequat, commodo tortor sed, porttitor dolor. Morbi eu nisl ultrices, pulvinar ligula vitae, ullamcorper massa. Sed malesuada ut magna vitae scelerisque.</p>
-									</blockquote>
-									<cite>Liza White, Codecanyon</cite>
-								</div>
-							</div>
-							<!-- Testimonials Slider / End -->
-						</section>
-						<!-- Testimonials / End -->
-
-
 
 				</div>
-
 			</section>
 			<!-- Page Content / End -->
 
