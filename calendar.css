@@ -15,7 +15,7 @@
 .calendar .days .day_name {
     width: calc(100% / 7);
     border-right: 1px solid #2c7aca;
-    padding: 10px;
+    padding: 7px;
     text-transform: uppercase;
     font-size: 5px;
     font-weight: bold;
@@ -27,20 +27,20 @@
     border: none;
 }
 .calendar .days .day_num {
-    display: flex;
+    display: table-cell;
     flex-flow: column;
     width: calc(100% / 7);
     border-right: 1px solid #e6e9ea;
     border-bottom: 1px solid #e6e9ea;
-    padding: 15px;
+    padding: 7px;
     font-weight: bold;
     color: #7c878d;
     cursor: pointer;
     min-height: 100px;
 }
 .calendar .days .day_num span {
-    display: inline-flex;
-    width: 30px;
+    display: flex;
+    width: 10px;
     font-size: 14px;
 }
 .calendar .days .day_num .event {
