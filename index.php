@@ -195,7 +195,7 @@
 						<div class="content col-md-8 col-md-offset-1 col-md-push-3">
 
 							<!-- World News Category -->
-							<h2>World News</h2>
+							<h2>Artikel</h2>
 							<div class="row">
 								<div class="col-md-6">
 									<!-- Post (Standard Format) -->
@@ -300,9 +300,6 @@
 									</article>
 									<!-- Post (Standard Format) / End -->
 								</div>
-							</div>
-							<div class="spacer"></div>
-							<div class="row">
 								<div class="col-md-6">
 									<!-- Post (Standard Format) -->
 									<article class="entry entry__standard entry__small entry__single">
@@ -354,61 +351,6 @@
 									<!-- Post (Standard Format) / End -->
 								</div>
 							</div>
-							<div class="spacer"></div>
-							<div class="row">
-								<div class="col-md-6">
-									<!-- Post (Standard Format) -->
-									<article class="entry entry__standard entry__small entry__single">
-										<figure class="alignnone entry-thumb">
-											<a href="#"><img src="http://placehold.it/350x220" alt=""></a>
-										</figure>
-										<header class="entry-header entry-header__small">
-											<h2><a href="blog-post.html">Standard Post Format (with Image)</a></h2>
-											<div class="entry-meta">
-												<span class="entry-date">24/12/2013</span>
-												<span class="entry-comments"><a href="#">0 Comments</a></span>
-												<span class="entry-category">in <a href="#">Latest News</a></span>
-												<span class="entry-author">by <a href="#">Dan Fisher</a></span>
-											</div>
-										</header>
-										
-										<div class="excerpt">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi ac mi malesuada vestibulum.
-										</div>
-										<footer class="entry-footer">
-											<a href="#" class="btn btn-default btn-sm">Read More</a>
-										</footer>
-									</article>
-									<!-- Post (Standard Format) / End -->
-								</div>
-								<div class="col-md-6">
-									<!-- Post (Standard Format) -->
-									<article class="entry entry__standard entry__small entry__single">
-										<figure class="alignnone entry-thumb">
-											<a href="#"><img src="http://placehold.it/350x220" alt=""></a>
-										</figure>
-										<header class="entry-header entry-header__small">
-											<h2><a href="blog-post.html">Standard Post Format (with Image)</a></h2>
-											<div class="entry-meta">
-												<span class="entry-date">24/12/2013</span>
-												<span class="entry-comments"><a href="#">0 Comments</a></span>
-												<span class="entry-category">in <a href="#">Latest News</a></span>
-												<span class="entry-author">by <a href="#">Dan Fisher</a></span>
-											</div>
-										</header>
-										
-										<div class="excerpt">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi ac mi malesuada vestibulum.
-										</div>
-										<footer class="entry-footer">
-											<a href="#" class="btn btn-default btn-sm">Read More</a>
-										</footer>
-									</article>
-									<!-- Post (Standard Format) / End -->
-								</div>
-							</div>
-							<!-- World News Category / End -->
-
 							<div class="spacer-lg"></div>
 
 							<ul class="pagination-custom list-unstyled list-inline">
@@ -450,8 +392,6 @@ $calendar->add_event('Holiday', '2023-05-16', 7);
 </html>
 						</div>
 							<!-- /Widget :: Latest Posts -->
-
-
 							<!-- Widget :: Categories -->
 							<div class="widget_categories widget widget__sidebar">
 								<h3 class="widget-title">Categories</h3>
@@ -520,31 +460,6 @@ $calendar->add_event('Holiday', '2023-05-16', 7);
 				<div class="footer-widgets">
 					<div class="container">
 						<div class="row">
-							<div class="col-sm-6 col-md-3">
-								<!-- Widget :: Latest Posts -->
-								<div class="latest-posts-widget widget widget__footer">
-									<h3 class="widget-title">Latest Posts</h3>
-									<div class="widget-content">
-										<ul class="latest-posts-list">
-											<li>
-												<figure class="thumbnail"><a href="#"><img src="http://placehold.it/60x60"></a></figure>
-												<span class="date">24/07/2013</span>
-												<h5 class="title"><a href="#">Duis placerat rhoncus arcu, sit amet aliquam leo</a></h5>
-											</li>
-											<li>
-												<figure class="thumbnail"><a href="#"><img src="http://placehold.it/60x60"></a></figure>
-												<span class="date">16/07/2013</span>
-												<h5 class="title"><a href="#">Mauris in arcu aliq, elementum nibh nec</a></h5>
-											</li>
-											<li>
-												<figure class="thumbnail"><a href="#"><img src="http://placehold.it/60x60"></a></figure>
-												<span class="date">14/07/2013</span>
-												<h5 class="title"><a href="#">Vestibulum in ligula rutrum faucibus interdum</a></h5>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<!-- /Widget :: Latest Posts -->
 							</div>
 							<div class="col-sm-6 col-md-3">
 								<!-- Widget :: Contacts Info -->
@@ -589,41 +504,7 @@ $calendar->add_event('Holiday', '2023-05-16', 7);
 								</div>
 								<!-- /Widget :: Contacts Info -->
 							</div>
-
-							<div class="clearfix visible-sm"></div>
-
-							<div class="col-sm-6 col-md-3">
-								<!-- Widget :: Categories -->
-								<div class="widget_categories widget widget__footer">
-									<h3 class="widget-title">Categories</h3>
-									<div class="widget-content">
-										<ul>
-											<li><a href="#">Web Design</a> (3)</li>
-											<li><a href="#">Illustration</a> (10)</li>
-											<li><a href="#">Logo Design</a> (12)</li>
-											<li><a href="#">Branding &amp; Identity</a> (8)</li>
-											<li><a href="#">WordPress</a> (3)</li>
-											<li><a href="#">HTML5 &amp; CSS3</a> (5)</li>
-											<li><a href="#">PHP/MySQl</a> (3)</li>
-										</ul>
-									</div>
-								</div>
-								<!-- /Widget :: Categories -->
-							</div>
-							<div class="col-sm-6 col-md-3">
-								<!-- Widget :: Flickr -->
-								<div class="widget_flickr widget widget__footer">
-									<h3 class="widget-title">Flickr</h3>
-									<div class="widget-content">
-										<!-- Flickr images will appear here -->
-										<ul id="flickr" class="flickr-feed"></ul>
-									</div>
-								</div>
-								<!-- /Widget :: Flickr -->
-							</div>
 						</div>
-						
-
 					</div>
 				</div>
 				<div class="footer-copyright">
