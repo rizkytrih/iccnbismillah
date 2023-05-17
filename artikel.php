@@ -10,190 +10,10 @@
 		<!-- Main -->
 		<div class="main" role="main">
 
-		<!-- SLIDERNYO -->
-		<?php include 'header/slider.php';?>
-
-		<!-- Page Content -->
-		<section class="page-content">
-				<div class="container">
-
-					<div class="title-accent">
-						<h3>Berita Terbaru</h3>
-					</div>
-					<div class="prev-next-holder text-right">
-						<a class="prev-btn" id="carousel-prev-alt"><i class="fa fa-angle-left"></i></a>
-						<a class="next-btn" id="carousel-next-alt"><i class="fa fa-angle-right"></i></a>
-					</div>
+        <div class="spacer-lg"></div>
 					<div class="row">
-						<div class="owl-carousel owl-carousel__posts owl-carousel-3">
-							<div class="project-item">
-								<div class="project-item-inner">
-									<figure class="alignnone project-img">
-										<img src="http://placehold.it/346x220" alt="gambar" />
-										<div class="overlay">
-											<a href="#" class="dlink"><i class="fa fa-link"></i></a>
-										</div>
-									</figure>
-									<div class="project-desc">
-										<div class="meta">
-											<a href="#" class="comments">
-												<i class="fa fa-comments"></i> 2
-											</a>
-											<span class="date">May 29, 2014</span>
-										</div>
-										<h4 class="title"><a href="#">ini adalah berita 1</a></h4>
-									</div>
-								</div>
-						   </div>
-
-						   <div class="project-item">
-								<div class="project-item-inner">
-									<figure class="alignnone project-img">
-										<img src="http://placehold.it/346x220" alt="" />
-										<div class="overlay">
-											<a href="#" class="dlink"><i class="fa fa-link"></i></a>
-										</div>
-									</figure>
-									<div class="project-desc">
-										<div class="meta">
-											<a href="#" class="comments">
-												<i class="fa fa-comments"></i> 2
-											</a>
-											<span class="date">May 29, 2014</span>
-										</div>
-										<h4 class="title"><a href="#">ini adalah berita 2</a></h4>
-									</div>
-								</div>
-						   </div>
-
-						   <div class="project-item">
-								<div class="project-item-inner">
-									<figure class="alignnone project-img">
-										<img src="http://placehold.it/346x220" alt="" />
-										<div class="overlay">
-											<a href="#" class="dlink"><i class="fa fa-link"></i></a>
-										</div>
-									</figure>
-									<div class="project-desc">
-										<div class="meta">
-											<a href="#" class="comments">
-												<i class="fa fa-comments"></i> 2
-											</a>
-											<span class="date">May 29, 2014</span>
-										</div>
-										<h4 class="title"><a href="#">ini adalah berita 3</a></h4>
-									</div>
-								</div>
-						   </div>
-
-						   <div class="project-item">
-								<div class="project-item-inner">
-									<figure class="alignnone project-img">
-										<img src="http://placehold.it/346x220" alt="" />
-										<div class="overlay">
-											<a href="#" class="dlink"><i class="fa fa-link"></i></a>
-										</div>
-									</figure>
-									<div class="project-desc">
-										<div class="meta">
-											<a href="#" class="comments">
-												<i class="fa fa-comments"></i> 2
-											</a>
-											<span class="date">May 29, 2014</span>
-										</div>
-										<h4 class="title"><a href="#">ini adalah berita 4</a></h4>
-									</div>
-								</div>
-						   </div>
-
-						   <div class="project-item">
-								<div class="project-item-inner">
-									<figure class="alignnone project-img">
-										<img src="http://placehold.it/346x220" alt="" />
-										<div class="overlay">
-											<a href="#" class="dlink"><i class="fa fa-link"></i></a>
-										</div>
-									</figure>
-									<div class="project-desc">
-										<div class="meta">
-											<a href="#" class="comments">
-												<i class="fa fa-comments"></i> 2
-											</a>
-											<span class="date">May 29, 2014</span>
-										</div>
-										<h4 class="title"><a href="#">Lorem ipsum dolor sit amet, consectet adipis elit</a></h4>
-									</div>
-								</div>
-						   </div>
-
-						   <div class="project-item">
-								<div class="project-item-inner">
-									<figure class="alignnone project-img">
-										<img src="http://placehold.it/346x220" alt="" />
-										<div class="overlay">
-											<a href="#" class="dlink"><i class="fa fa-link"></i></a>
-										</div>
-									</figure>
-									<div class="project-desc">
-										<div class="meta">
-											<a href="#" class="comments">
-												<i class="fa fa-comments"></i> 2
-											</a>
-											<span class="date">May 29, 2014</span>
-										</div>
-										<h4 class="title"><a href="#">Lorem ipsum dolor sit amet, consectet adipis elit</a></h4>
-									</div>
-								</div>
-						   </div>
-
-						   <div class="project-item">
-								<div class="project-item-inner">
-									<figure class="alignnone project-img">
-										<img src="http://placehold.it/346x220" alt="" />
-										<div class="overlay">
-											<a href="#" class="dlink"><i class="fa fa-link"></i></a>
-										</div>
-									</figure>
-									<div class="project-desc">
-										<div class="meta">
-											<a href="#" class="comments">
-												<i class="fa fa-comments"></i> 2
-											</a>
-											<span class="date">May 29, 2014</span>
-										</div>
-										<h4 class="title"><a href="#">Lorem ipsum dolor sit amet, consectet adipis elit</a></h4>
-									</div>
-								</div>
-						   </div>
-
-						   <div class="project-item">
-								<div class="project-item-inner">
-									<figure class="alignnone project-img">
-										<img src="http://placehold.it/346x220" alt="" />
-										<div class="overlay">
-											<a href="#" class="dlink"><i class="fa fa-link"></i></a>
-										</div>
-									</figure>
-									<div class="project-desc">
-										<div class="meta">
-											<a href="#" class="comments">
-												<i class="fa fa-comments"></i> 2
-											</a>
-											<span class="date">May 29, 2014</span>
-										</div>
-										<h4 class="title"><a href="#">Lorem ipsum dolor sit amet, consectet adipis elit</a></h4>
-									</div>
-								</div>
-						   </div>
-
-						</div>
-					</div>
-
-					<hr class="lg">
-
-					<div class="row">
-						<div class="content col-md-8 col-md-offset-1 col-md-push-3">
-
+						<div class="content col-md-7 col-md-offset-1">
+                            
 							<!-- World News Category -->
 							<h2>Artikel</h2>
 							<div class="row">
@@ -217,7 +37,7 @@
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi ac mi malesuada vestibulum.
 										</div>
 										<footer class="entry-footer">
-											<a href="artikel.php" class="btn btn-primary btn-sm">Baca Selengkapnya</a>
+											<a href="#" class="btn btn-primary btn-sm">Baca Selengkapnya</a>
 										</footer>
 									</article>
 									<!-- Post (Standard Format) / End -->
@@ -242,7 +62,7 @@
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi ac mi malesuada vestibulum.
 										</div>
 										<footer class="entry-footer">
-											<a href="artikel.php" class="btn btn-primary btn-sm">Baca Selengkapnya</a>
+											<a href="#" class="btn btn-primary btn-sm">Baca Selengkapnya</a>
 										</footer>
 									</article>
 									<!-- Post (Standard Format) / End -->
@@ -270,7 +90,7 @@
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi ac mi malesuada vestibulum.
 										</div>
 										<footer class="entry-footer">
-											<a href="artikel.php" class="btn btn-primary btn-sm">Baca Selengkapnya</a>
+											<a href="#" class="btn btn-primary btn-sm">Baca Selengkapnya</a>
 										</footer>
 									</article>
 									<!-- Post (Standard Format) / End -->
@@ -295,7 +115,7 @@
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi ac mi malesuada vestibulum.
 										</div>
 										<footer class="entry-footer">
-											<a href="artikel.php" class="btn btn-primary btn-sm">Baca Selengkapnya</a>
+											<a href="#" class="btn btn-primary btn-sm">Baca Selengkapnya</a>
 										</footer>
 									</article>
 									<!-- Post (Standard Format) / End -->
@@ -309,7 +129,7 @@
 							
 							<ul class="pagination-custom list-unstyled list-inline">
 								<li><a href="#" class="btn btn-sm btn-primary">1</a></li>
-								<li><a href="artikel.php" class="btn btn-sm btn-default">2</a></li>
+								<li><a href="#" class="btn btn-sm btn-default">2</a></li>
 								<li><a href="#" class="btn btn-sm btn-default">3</a></li>
 								<li><a href="#" class="btn btn-sm btn-default">&raquo;</a></li>
 							</ul>
@@ -318,32 +138,6 @@
 						<aside class="sidebar col-md-3 col-md-pull-9 col-bordered">
 							<!-- Widget :: Latest Posts -->
 							<div>
-						<?php
-include 'Calendar.php';
-$calendar = new Calendar('2023-05-12');
-$calendar->add_event('Birthday', '2023-05-03', 1, 'green');
-$calendar->add_event('Doctors', '2023-05-04', 1, 'red');
-$calendar->add_event('Holiday', '2023-05-16', 7);
-?>
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Event Calendar</title>
-		<link href="style.css" rel="stylesheet" type="text/css">
-		<link href="calendar.css" rel="stylesheet" type="text/css">
-	</head>
-	<body>
-	    <nav class="navtop">
-	    	<div>
-	    		<h1>Event Calendar</h1>
-	    	</div>
-	    </nav>
-		<div class="content home">
-			<?=$calendar?>
-		</div>
-	</body>
-</html>
 </div>
 </aside>
 </div>
@@ -351,44 +145,7 @@ $calendar->add_event('Holiday', '2023-05-16', 7);
 </section>
 			<!-- Page Content / End -->
 
-			<!-- Social Links -->
-			<div class="social-links-section social-links-section__dark icons-rounded">
-				<div class="container">
-					<ul>
-						<li>
-							<a href="#"><i class="fa fa-facebook fa-lg"></i>
-								<h5>Facebook</h5>
-							</a>
-						</li>
-						<li>
-							<a href="#"><i class="fa fa-twitter fa-lg"></i>
-								<h5>Twitter</h5>
-							</a>
-						</li>
-						<li>
-							<a href="#"><i class="fa fa-instagram fa-lg"></i>
-								<h5>Instagram</h5>
-							</a>
-						</li>
-						<li>
-							<a href="#"><i class="fa fa-dribbble fa-lg"></i>
-								<h5>Dribbble</h5>
-							</a>
-						</li>
-						<li>
-							<a href="#"><i class="fa fa-pinterest fa-lg"></i>
-								<h5>Pinterest</h5>
-							</a>
-						</li>
-						<li>
-							<a href="#"><i class="fa fa-yelp fa-lg"></i>
-								<h5>Yelp</h5>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<!-- Social Links / End -->
+			<div class="spacer-lg"></div>
 
 			<!-- Footer -->
 			<footer class="footer" id="footer">

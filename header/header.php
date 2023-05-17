@@ -100,7 +100,7 @@
 							</button>
 						<!-- Logo -->
 						<div class="logo">
-								 <h1><a href="index.html"> <a href="index.php"><img src="images/logoiccn.png" alt="iccn" height="50" width="70"></a> ICCN</a></h1>
+								 <h1><a href="index.php"> <a href="index.php"><img src="images/logoiccn.png" alt="iccn" height="50" width="70"></a> ICCN</a></h1>
 								 <p class="tagline">Indonesia Career Center </p>
 							 </div>
 							 <!-- Logo / End -->
@@ -108,10 +108,11 @@
 
 						<div id="main-nav" class="navbar-collapse collapse">
 							<ul class="nav navbar-nav">
-								<li><a href="index.php">Home</a></li>
-								<li><a href="artikel.html">Artikel</a></li>
-								<li><a href="berita.html">Berita</a></li>
-								<li><a href="forum.html">Forum</a></li>
+								<li class="dropdown fhmm-fw">
+									<a href="index.php">Home</a></li>
+								<li><a href="artikel.php">Artikel</a></li>
+								<li><a href="berita.php">Berita</a></li>
+								<li><a href="forum.php">Forum</a></li>
 
 								<!-- Mega Menu -->
 								<li class="dropdown">
