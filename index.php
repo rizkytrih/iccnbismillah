@@ -460,8 +460,21 @@ $calendar->add_event('Holiday', '2023-05-16', 7);
 				<div class="footer-widgets">
 					<div class="container">
 						<div class="row">
+							<div class="col-sm-8 col-md-9">
+								<!-- Widget :: Text Widget -->
+								<div class="widget_text widget widget__footer">
+									<h3 class="widget-title">About Us</h3>
+									<div class="widget-content">
+										<p>Mauris et vulputate est. Integer viverra nunc vitae facilisis cursus. Quisque ac ultricies quam, a molestie leo. Nulla convallis turpis id vulputate aliquam. Nulla facilisi. Nam tincidunt odio dignissim dui lobortis adipiscing.</p>
+							
+										<p>Nullam volutpat quis sem id iaculis. Fusce interdum, quam ac aliquam vulputate, orci nisl imperdiet turpis, non posuere massa ipsum et lorem. Pellentesque facilisis, orci nec gravida accumsan, massa elit hendrerit lacus, tortor.</p>
+							
+										<a href="#" class="btn btn-primary">Learn More</a>
+									</div>
+								</div>
+								<!-- /Widget :: Text Widget -->
 							</div>
-							<div class="col-sm-6 col-md-3">
+							<div class="col-sm-4 col-md-3">
 								<!-- Widget :: Contacts Info -->
 								<div class="contacts-widget widget widget__footer">
 									<h3 class="widget-title">Contact Us</h3>
@@ -485,19 +498,6 @@ $calendar->add_event('Holiday', '2023-05-16', 7);
 												<span class="info-item">
 													<a href="mailto:info@dan-fisher.com">info@dan-fisher.com</a>
 												</span>
-											</li>
-											<li>
-												<i class="fa fa-skype"></i>
-												<div class="info-item">
-													<a href="#">dan_fisher</a><br>
-													<a href="#">help_danfisher</a>
-												</div>
-											</li>
-											<li>
-												<i class="fa fa-clock-o"></i>
-												<div class="info-item">
-													Monday - Friday 9:00 - 21:00
-												</div>
 											</li>
 										</ul>
 									</div>
