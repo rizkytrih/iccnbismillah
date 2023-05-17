@@ -10,10 +10,12 @@
 		<!-- Main -->
 		<div class="main" role="main">
 
+
+<div class="container">
         <div class="spacer-lg"></div>
 					<div class="row">
-						<div class="content col-md-7 col-md-offset-1">
-                            
+						<div class="content col-md-7 col-md-offset-0">
+                            <div class="container">
 							<!-- World News Category -->
 							<h2>Artikel</h2>
 							<div class="row">
@@ -138,13 +140,14 @@
 						<aside class="sidebar col-md-3 col-md-pull-9 col-bordered">
 							<!-- Widget :: Latest Posts -->
 							<div>
+						
 </div>
 </aside>
 </div>
 </div>
 </section>
 			<!-- Page Content / End -->
-
+			</div>
 			<div class="spacer-lg"></div>
 
 			<!-- Footer -->
