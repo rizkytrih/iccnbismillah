@@ -1,6 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<?php include 'header/header.php';
+include 'header/koneksi.php';
+// kalau tidak ada id di query string
+if( !isset($_GET['id']) ){
+    header('Location: index.php');
+}
+
+//ambil id dari query string
+$id = $_GET['id'];
+
+// buat query untuk mengupdate jumlah view
+$updateQuery = mysqli_query($connection, "UPDATE berita SET dilihat = dilihat + 1 WHERE id_berita='$id'");
+if ($updateQuery) {
+	// Jika berhasil diupdate, ambil kembali data berita setelah penambahan view
+	$query = mysqli_query($connection, "SELECT * FROM berita JOIN admin ON admin.id_admin = berita.id_admin WHERE id_berita='$id'");
+	$d = mysqli_fetch_assoc($query);
+
+} else {
+  // Jika query gagal dijalankan, tampilkan pesan error
+  die("Gagal mengupdate jumlah view...");
+}
+
+// buat query untuk ambil data dari database
+$query= mysqli_query($connection, "SELECT * FROM berita JOIN admin ON admin.id_admin = berita.id_admin WHERE id_berita='$id'");
+$d = mysqli_fetch_assoc($query);
+
+// jika data yang di-edit tidak ditemukan
+if( mysqli_num_rows($query) < 1 ){
+    die("data tidak ditemukan...");
+}
+?>
+
+
 
 	<!-- Basic Page Needs
 	================================================== -->
@@ -59,7 +92,6 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 	<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
-	<?php include 'header/header.php';?>
 </head>
 <body>
 
@@ -81,31 +113,19 @@
 									<i class="fa fa-file"></i>
 								</div>
 								<header class="entry-header">
-									<h2>Standard Post Format (with Image)</h2>
+									<h2><?php echo $d['judul']; ?></h2>
 									<div class="entry-meta">
-										<span class="entry-date">24/12/2013</span>
-										<span class="entry-comments"><a href="#">0 Comments</a></span>
-										<span class="entry-category">in <a href="#">Latest News</a></span>
-										<span class="entry-author">by <a href="#">Dan Fisher</a></span>
+										<span class="entry-date"><?php echo $d['tgl_posting']; ?></span>
+										<span class="entry-comments"><a href="#"><?php echo $d['dilihat']; ?> Views</a></span>
+										<span class="entry-category">in <a href="#">Berita</a></span>
+										<span class="entry-author">by <a href="#"><?php echo $d['nama_lengkap']; ?></a></span>
 									</div>
 								</header>
 								<figure class="alignnone entry-thumb">
-									<a href="#"><img src="http://placehold.it/704x328" alt=""></a>
+									<img src="gambar/<?php echo $d['gambar'] ?>" alt="">
 								</figure>
 								<div class="entry-content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet venenatis orci, ut tempus ipsum. Donec sit amet massa et dui ultricies eleifend. Curabitur at nibh ante. Mauris vulputate massa quis nisl eleifend, in pellentesque felis convallis. Ut quis consectetur turpis, vel dictum risus. Quisque venenatis nisi sed magna pharetra, non tincidunt ante laoreet. Sed cursus tellus ut cursus tristique.</p> 
-
-									<p>Curabitur auctor erat sed nisl interdum luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim felis, semper hendrerit hendrerit porta, lacinia nec ante. Ut consectetur fringilla porta. Proin luctus, enim non porta feugiat, libero dolor adipiscing metus, id pharetra arcu urna vel elit. Vivamus consectetur tellus sapien, a faucibus diam placerat id. Sed arcu felis, tincidunt sed ligula nec, suscipit euismod massa. Curabitur faucibus ante est, ac sollicitudin purus congue ut.</p>
-
-									<p>Proin quis elit id ipsum aliquet ullamcorper sed malesuada nunc. Integer dictum sem a mollis iaculis. Morbi sit amet urna orci. Aenean tellus nisl, malesuada quis risus et, pulvinar gravida diam. Phasellus ut mattis ante, quis dictum dui. Aenean quis sem ut justo euismod porttitor. Praesent vel magna at massa lacinia malesuada id id sem. Nulla egestas imperdiet commodo. Nunc egestas nisl eu quam mattis suscipit. Maecenas iaculis, felis eu ultricies posuere, sapien sem eleifend erat, non tincidunt purus velit eu odio. Duis feugiat eros eu turpis bibendum, at lobortis quam consequat.</p>
-
-									<blockquote>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae cursus nunc, eu aliquet augue. Duis neque turpis, sodales et augue ut, consectetur feugiat leo. Aenean faucibus risus ultrices, dictum odio in, gravida purus. Morbi imperdiet, risus in faucibus mollis.</p>
-									</blockquote>
-
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet venenatis orci, ut tempus ipsum. Donec sit amet massa et dui ultricies eleifend. Curabitur at nibh ante. Mauris vulputate massa quis nisl eleifend, in pellentesque felis convallis. Ut quis consectetur turpis, vel dictum risus. Quisque venenatis nisi sed magna pharetra, non tincidunt ante laoreet. Sed cursus tellus ut cursus tristique.</p> 
-
-									<p>Curabitur auctor erat sed nisl interdum luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim felis, semper hendrerit hendrerit porta, lacinia nec ante. Ut consectetur fringilla porta. Proin luctus, enim non porta feugiat, libero dolor adipiscing metus, id pharetra arcu urna vel elit. Vivamus consectetur tellus sapien, a faucibus diam placerat id. Sed arcu felis, tincidunt sed ligula nec, suscipit euismod massa. Curabitur faucibus ante est, ac sollicitudin purus congue ut.</p>
+									<?php echo $d['teks_berita']; ?>
 								</div>
 							</article>
 							<!-- Post (Standard Format) / End -->
