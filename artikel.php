@@ -30,7 +30,7 @@
 							<!-- World News Category -->
 							<h2>Artikel</h2>
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-md-4">
 									<!-- Post (Standard Format) -->
 									<article class="entry entry__standard entry__small entry__single">
 										<figure class="alignnone entry-thumb">
@@ -55,7 +55,7 @@
 									</article>
 									<!-- Post (Standard Format) / End -->
 								</div>
-								<div class="col-md-6">
+								<div class="col-md-4">
 									<!-- Post (Standard Format) -->
 									<article class="entry entry__standard entry__small entry__single">
 										<figure class="alignnone entry-thumb">
@@ -80,10 +80,7 @@
 									</article>
 									<!-- Post (Standard Format) / End -->
 								</div>
-							</div>
-							<div class="spacer"></div>
-							<div class="row">
-								<div class="col-md-6">
+								<div class="col-md-4">
 									<!-- Post (Standard Format) -->
 									<article class="entry entry__standard entry__small entry__single">
 										<figure class="alignnone entry-thumb">
@@ -108,7 +105,10 @@
 									</article>
 									<!-- Post (Standard Format) / End -->
 								</div>
-								<div class="col-md-6">
+							</div>
+							<div class="spacer"></div>
+							<div class="row">
+								<div class="col-md-4">
 									<!-- Post (Standard Format) -->
 									<article class="entry entry__standard entry__small entry__single">
 										<figure class="alignnone entry-thumb">
@@ -116,6 +116,55 @@
 										</figure>
 										<header class="entry-header entry-header__small">
 											<h2><a href="blog-post.html">Artikel 4</a></h2>
+											<div class="entry-meta">
+												<span class="entry-date">24/12/2013</span>
+												<span class="entry-comments"><a href="#">0 Comments</a></span>
+												<span class="entry-category">in <a href="#">Latest News</a></span>
+												<span class="entry-author">by <a href="#">Dan Fisher</a></span>
+											</div>
+										</header>
+										
+										<div class="excerpt">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi ac mi malesuada vestibulum.
+										</div>
+										<footer class="entry-footer">
+											<a href="#" class="btn btn-primary btn-sm">Baca Selengkapnya</a>
+										</footer>
+									</article>
+									<!-- Post (Standard Format) / End -->
+								</div>
+								<div class="col-md-4">
+									<!-- Post (Standard Format) -->
+									<article class="entry entry__standard entry__small entry__single">
+										<figure class="alignnone entry-thumb">
+											<a href="#"><img src="http://placehold.it/350x220" alt=""></a>
+										</figure>
+										<header class="entry-header entry-header__small">
+											<h2><a href="blog-post.html">Artikel 5</a></h2>
+											<div class="entry-meta">
+												<span class="entry-date">24/12/2013</span>
+												<span class="entry-comments"><a href="#">0 Comments</a></span>
+												<span class="entry-category">in <a href="#">Latest News</a></span>
+												<span class="entry-author">by <a href="#">Dan Fisher</a></span>
+											</div>
+										</header>
+										<div class="excerpt">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi ac mi malesuada vestibulum.
+										</div>
+										<footer class="entry-footer">
+											<a href="#" class="btn btn-primary btn-sm">Baca Selengkapnya</a>
+										</footer>
+									</article>
+									<!-- Post (Standard Format) / End -->
+								</div>
+								<div class="col-md-4">
+									<!-- Post (Standard Format) -->
+									<article class="entry entry__standard entry__small entry__single">
+										<figure class="alignnone entry-thumb">
+											<a href="#"><img src="http://placehold.it/350x220" alt=""></a>
+										</figure>
+										<header class="entry-header entry-header__small">
+											<h2><a href="blog-post.html">Artikel 6</a></h2>
 											<div class="entry-meta">
 												<span class="entry-date">24/12/2013</span>
 												<span class="entry-comments"><a href="#">0 Comments</a></span>
