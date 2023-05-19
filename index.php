@@ -36,7 +36,7 @@ include 'header/koneksi.php';?>
 											} ?>">
 						<div class="project-item-inner">
 							<figure class="alignnone project-img">
-								<img src="gambar/<?php echo $row['gambar'] ?>" alt="gambar" />
+								<img class="img-fluid" src="gambar/<?php echo $row['gambar'] ?>" alt="gambar" style="width:600px; height:300px;"/>
 								<div class="overlay">
 									<a href="#" class="dlink"><i class="fa fa-link"></i></a>
 								</div>
