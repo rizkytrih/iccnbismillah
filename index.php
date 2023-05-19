@@ -18,7 +18,7 @@ include 'header/koneksi.php';?>
 		<section class="page-content">
 	<div class="container">
 		<div class="title-accent">
-			<h3>Berita Pilihan</h3>
+			<h3>Berita Terupdate</h3>
 		</div>
 		<div class="prev-next-holder text-right">
 			<a class="prev-btn" id="carousel-prev-alt"><i class="fa fa-angle-left"></i></a>
@@ -28,7 +28,7 @@ include 'header/koneksi.php';?>
 			<div class="owl-carousel owl-carousel__posts owl-carousel-3">
 				<?php
 				$counter = 1;
-				$query = mysqli_query($connection, "SELECT * FROM berita");
+				$query = mysqli_query($connection, "SELECT * FROM berita ORDER BY tgl_posting DESC");
 				while ($row = mysqli_fetch_array($query)) {
 				?>
 					<div class="project-item<?php if ($counter <= 1) {
