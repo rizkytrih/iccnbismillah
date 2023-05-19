@@ -58,8 +58,8 @@
                                                     <th scope="row"><?php echo $no++; ?></th>
                                                     <td><?php echo $d['judul']; ?></td>
                                                     <td><?php echo $d['isi']; ?></td>
-                                                    <td><?php echo $d['gambar']; ?></td>
-                                                    <td><a class="btn btn-primary waves-effect waves-light" href="#" role="button">Ubah</a></td>         
+                                                    <td><img src="gambar/<?php echo $d['gambar'] ?>" width="5%"></td>
+                                                    <td><a class="btn btn-primary waves-effect waves-light" href="edit_banner.php?id=<?php echo $d['id_banner']; ?>" role="button">Ubah</a></td>         
                                                 </tr>
                                                 </tbody>
                                                 <?php 

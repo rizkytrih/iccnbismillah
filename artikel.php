@@ -2,6 +2,17 @@
 <html lang="en">
 <head>
 
+    <!-- Plugins css -->
+    <link href="../plugins/quill/quill.core.css" rel="stylesheet" type="text/css" />
+    <link href="../plugins/quill/quill.bubble.css" rel="stylesheet" type="text/css" />
+    <link href="../plugins/quill/quill.snow.css" rel="stylesheet" type="text/css" />
+   
+
+    <!-- App css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/theme.min.css" rel="stylesheet" type="text/css" />
+
 <?php include 'header/header.php';?>
 </head>
 <body>
