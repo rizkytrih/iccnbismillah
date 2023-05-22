@@ -92,6 +92,18 @@ if( mysqli_num_rows($query) < 1 ){
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 	<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+
+    <style>
+    .containers {
+      max-width: 1800px;
+      margin: 0 auto;
+      padding: 50px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: justify;
+    }
+  </style>
 </head>
 <body>
 
@@ -124,14 +136,15 @@ if( mysqli_num_rows($query) < 1 ){
 								<figure class="alignnone entry-thumb">
 									<img src="gambar/<?php echo $d['gambar_event'] ?>" alt="">
 								</figure>
-								<div class="entry-content">
+								<div class="containers">
 									
-                                    <br> <?php echo $d['deskripsi_event']; ?>
+                                    <br><?php echo $d['deskripsi_event']; ?>
+                                    <br>
                                     <br>
                                     Tanggal: <?php echo $d['tanggal']; ?>
                                     <br>
                                     Alamat: <?php echo $d['alamat']; ?>
-
+                    
 								</div>
 							</article>
 							<!-- Post (Standard Format) / End -->
