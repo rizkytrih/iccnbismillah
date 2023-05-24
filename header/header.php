@@ -113,50 +113,9 @@
 								<li><a href="artikel.php">Artikel</a></li>
 								<li><a href="berita.php">Berita</a></li>
 								<li><a href="forum.php">Forum</a></li>
-
-								<!-- Mega Menu -->
-								<li class="dropdown">
-									<a href="portfolio-3cols.html" data-toggle="dropdown" class="dropdown-toggle disabled dropdown-toggle__caret-holder">PROGRAM</a>
-									<a class="dropdown-toggle dropdown-toggle__caret"><b class="caret"></b></a>
-									<ul class="dropdown-menu" role="menu">
-										<li><a href="portfolio-2cols.html">Portfolio 2 cols</a></li>
-										<li><a href="portfolio-3cols.html">Portfolio 3 cols</a></li>
-										<li><a href="portfolio-4cols.html">Portfolio 4 cols</a></li>
-										<li><a href="portfolio-fullw.html">Portfolio Full Width</a></li>
-										<li><a href="portfolio-timeline.html">Portfolio Timeline</a></li>
-										<li><a href="portfolio-single.html">Single Project</a></li>
-									</ul>
-								</li>
-								<!-- Mega Menu / End -->
-
-								<!-- Mega Menu -->
-								<li class="dropdown">
-									<a href="portfolio-3cols.html" data-toggle="dropdown" class="dropdown-toggle disabled dropdown-toggle__caret-holder">SUPPORT</a>
-									<a class="dropdown-toggle dropdown-toggle__caret"><b class="caret"></b></a>
-									<ul class="dropdown-menu" role="menu">
-										<li><a href="portfolio-2cols.html">Portfolio 2 cols</a></li>
-										<li><a href="portfolio-3cols.html">Portfolio 3 cols</a></li>
-										<li><a href="portfolio-4cols.html">Portfolio 4 cols</a></li>
-										<li><a href="portfolio-fullw.html">Portfolio Full Width</a></li>
-										<li><a href="portfolio-timeline.html">Portfolio Timeline</a></li>
-										<li><a href="portfolio-single.html">Single Project</a></li>
-									</ul>
-								</li>
-								<!-- Mega Menu / End -->
-
-								<!-- Mega Menu -->
-								<li class="dropdown">
-									<a href="portfolio-3cols.html" data-toggle="dropdown" class="dropdown-toggle disabled dropdown-toggle__caret-holder">TENTANG ICCN</a>
-									<a class="dropdown-toggle dropdown-toggle__caret"><b class="caret"></b></a>
-									<ul class="dropdown-menu" role="menu">
-										<li><a href="portfolio-2cols.html">Portfolio 2 cols</a></li>
-										<li><a href="portfolio-3cols.html">Portfolio 3 cols</a></li>
-										<li><a href="portfolio-4cols.html">Portfolio 4 cols</a></li>
-										<li><a href="portfolio-fullw.html">Portfolio Full Width</a></li>
-										<li><a href="portfolio-timeline.html">Portfolio Timeline</a></li>
-										<li><a href="portfolio-single.html">Single Project</a></li>
-									</ul>
-								</li>
+								<li><a href="#">Program</a></li>
+								<li><a href="#">Support</a></li>
+								<li><a href="page-about.php">Tentang ICCN</a></li>
 								<!-- Mega Menu / End -->
 							</ul><!-- end nav navbar-nav -->
 						</div><!-- end #main-nav -->
