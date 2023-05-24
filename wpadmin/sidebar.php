@@ -1,4 +1,4 @@
-<?php include '..\header\koneksi.php';?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -293,14 +293,15 @@
                             </li>
 
                             <li>
-                                <a href="javascript: void(0);" class="has-arrow waves-effect"><i
-                                        class="mdi mdi-black-mesa"></i><span>Berita</span></a>
-                                <ul class="sub-menu" aria-expanded="false">
+                                <a href="berita.php" class="">
+                                    <i class="mdi mdi-black-mesa"></i>
+                                    <span>Berita</span></a>
+                                <!-- <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="icons-materialdesign.html">Material Design</a></li>
                                     <li><a href="icons-fontawesome.html">Font awesome</a></li>
                                     <li><a href="icons-dripicons.html">Dripicons</a></li>
                                     <li><a href="icons-feather.html">Feather Icons</a></li>
-                                </ul>
+                                </ul> -->
                             </li>
 
                             <li class="menu-title"></li>
@@ -357,7 +358,8 @@
             <!-- Left Sidebar End -->
 
             <!-- ============================================================== -->
-            <!-- Start right Content here -->
+            
+            <!-- Start right Content here --><?php  require '..\header\koneksi.php'; ?>
             <!-- ============================================================== -->
            
         </div>

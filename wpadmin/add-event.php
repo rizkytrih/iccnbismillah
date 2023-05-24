@@ -18,7 +18,6 @@
 <?php include 'sidebar.php';
 
 
-
 ?>
 
 
@@ -33,7 +32,7 @@
         <div class="row">
             <div class="col-xl-6">
                 <div class="card">
-                <form action="" method="POST" enctype="multipart/form-data">
+                <form action="proses-tambah-event.php" method="POST" enctype="multipart/form-data">
                     <div class="card-body">
                         <h4 class="card-title">Tambah Event</h4>
                         <p class="card-subtitle mb-4">Silahkan isi detail event</p>

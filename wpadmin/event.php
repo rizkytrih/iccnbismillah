@@ -1,6 +1,4 @@
-<?php include 'sidebar.php'; 
-include '..\header\koneksi.php';?>
-?>
+<?php include 'sidebar.php'; ?>
 
         <!-- ============================================================== -->
         <!-- Start right Content here -->
@@ -14,7 +12,7 @@ include '..\header\koneksi.php';?>
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-flex align-items-center justify-content-between">
-                                <h4 class="mb-0 font-size-18">BANNER</h4>
+                                <h4 class="mb-0 font-size-18">BERITA</h4>
 
                                 <!-- <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
@@ -34,7 +32,7 @@ include '..\header\koneksi.php';?>
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title">Ubah Banner</h4>
+                                    <h4 class="card-title">Berita</h4>
                                     <!-- <p class="card-subtitle mb-4">
                                         See how aspects of the Bootstrap grid system work across multiple devices with a handy table.
                                     </p> -->
@@ -43,26 +41,27 @@ include '..\header\koneksi.php';?>
                                         <table class="table mb-0">
                                             <thead class="thead-light">
                                                 <tr>
-                                                    <th>No</th>
-                                                    <th>Judul Banner</th>
-                                                    <th>Isi Banner</th>
-                                                    <th>Gambar</th>
-                                                    <th>Action</th>
+                                                  <th width="30%">Judul</th>
+                                                    <th width="5%">Gambar</th>
+                                                    <th width="15%">Tgl. Posting</th>
+                                                    <th width="15%">Penulis</th>
+                                                    <th width="15%">Pilihan</th>
                                                 </tr>
                                             </thead>
                                             <?php
-                                            
-                                                $no =1;
-                                                $data = mysqli_query($connection, "SELECT * from banner");
+                                                $data = mysqli_query($connection, "SELECT * FROM berita JOIN admin ON admin.id_admin = berita.id_admin ORDER BY tgl_posting DESC");
                                                 while($d = mysqli_fetch_array($data)){
                                                     ?>
                                             <tbody>
                                                 <tr>
-                                                    <th scope="row"><?php echo $no++; ?></th>
                                                     <td><?php echo $d['judul']; ?></td>
-                                                    <td><?php echo $d['isi']; ?></td>
-                                                    <td><img src="gambar/<?php echo $d['gambar'] ?>" width="5%"></td>
-                                                    <td><a class="btn btn-primary waves-effect waves-light" href="edit_banner.php?id=<?php echo $d['id_banner']; ?>" role="button">Ubah</a></td>         
+                                                    <td><img src="../gambar/<?php echo $d['gambar'] ?>" height="75" width="75"></td>
+                                                    <td><?php echo $d['tgl_posting']; ?></td>
+                                                    <td><?php echo $d['nama_lengkap'];?></td>
+                                                    <td><a class="btn btn-primary waves-effect waves-light" href="edit_berita.php?id=<?php echo $d['id_berita']; ?>" role="button">Lihat</a>
+                                                        <a class="btn btn-warning waves-effect waves-light" href="edit_berita.php?id=<?php echo $d['id_berita']; ?>" role="button">Ubah</a>
+                                                        <a class="btn btn-danger waves-effect waves-light" href="edit_berita.php?id=<?php echo $d['id_berita']; ?>" role="button">Hapus</a>
+                                                    </td>         
                                                 </tr>
                                                 </tbody>
                                                 <?php 
