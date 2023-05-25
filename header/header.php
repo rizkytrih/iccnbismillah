@@ -1,6 +1,6 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 	<!-- Basic Page Needs
@@ -10,7 +10,7 @@
 	<title>ICCN | Indonesia Career Center Network</title>
 	<meta name="description" content="iccn">
 	<meta name="author" content="http://themeforest.net/user/dan_fisher">
-
+	
 
 	<!-- Mobile Specific Metas
 	================================================== -->
@@ -18,8 +18,7 @@
 
 	<!-- Google Web Fonts
 	================================================== -->
-	<link href='http://fonts.googleapis.com/css?family=Anton|Muli:300,400,400italic,300italic|Oswald' rel='stylesheet'
-		type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Anton|Muli:300,400,400italic,300italic|Oswald' rel='stylesheet' type='text/css'>
 
 	<!-- CSS
 	================================================== -->
@@ -40,7 +39,7 @@
 
 	<!-- Skin CSS -->
 	<link rel="stylesheet" href="css/skins/red.css">
-
+	
 	<!-- Custom CSS-->
 	<link rel="stylesheet" href="css/custom.css">
 
@@ -64,13 +63,12 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 	<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
-
+	
 </head>
-
 <body>
 
 	<div class="site-wrapper">
-
+		
 		<!-- Header -->
 		<header class="header header-default">
 
@@ -79,6 +77,7 @@
 					<div class="header-top-left">
 						<ul class="header-top-nav">
 							<li><a href="#">Home</a></li>
+							<li><a href="#">Pricing</a></li>
 							<li><a href="#">FAQs</a></li>
 						</ul>
 					</div>
@@ -87,7 +86,7 @@
 							<i class="fa fa-lock"></i> <a href="shop-login.html">Login</a>
 						</span>
 						<span class="register">
-							<i class="fa fa-pencil-square-o"></i> Not a member? <a href="shop-login.html">Register</a>
+						<i class="fa fa-pencil-square-o"></i>	Not a member? <a href="shop-login.html">Register</a>
 						</span>
 					</div>
 				</div>
@@ -99,33 +98,57 @@
 							<button type="button" class="navbar-toggle">
 								<i class="fa fa-bars"></i>
 							</button>
-							<!-- Logo -->
-							<div class="logo">
-								<h1><a href="index.php"> <a href="index.php"><img src="images/logoiccn.png" alt="iccn"
-												height="50" width="70">
-							</div>
-							<!-- Logo / End -->
+						<!-- Logo -->
+						<div class="logo">
+								 <h1><a href="index.php"> <a href="index.php"><img src="images/logoiccn.png" alt="iccn" height="60" ></a>  </a></h1>
+								 <!-- <p class="tagline">Indonesia Career Center </p> -->
+							 </div>
+							 <!-- Logo / End -->
 						</div><!-- end navbar-header -->
 
 						<div id="main-nav" class="navbar-collapse collapse">
-							
 							<ul class="nav navbar-nav">
 								<li class="dropdown fhmm-fw">
-									<a href="index.php">Home</a>
-								</li>
+									<a href="index.php">Home</a></li>
 								<li><a href="artikel.php">Artikel</a></li>
 								<li><a href="berita.php">Berita</a></li>
 								<li><a href="forum.php">Forum</a></li>
+
+								<!-- Mega Menu -->
 								<li class="dropdown">
-									<a data-toggle="dropdown" class="dropdown-toggle disabled dropdown-toggle__caret-holder">Program</a>
+									<a href="portfolio-3cols.html" data-toggle="dropdown" class="dropdown-toggle disabled dropdown-toggle__caret-holder">PROGRAM</a>
 									<a class="dropdown-toggle dropdown-toggle__caret"><b class="caret"></b></a>
 									<ul class="dropdown-menu" role="menu">
-										<li><a href="portfolio-2cols.html">Portfolio Kerja</a></li>
-										<li><a href="#">Event</a></li>
+										<li><a href="portfolio-2cols.html">Event</a></li>
+										<li><a href="portfolio-3cols.html">Program Kerja</a></li>
 									</ul>
 								</li>
-								<li><a href="#">Support</a></li>
-								<li><a href="page-about.php">Tentang ICCN</a></li>
+								<!-- Mega Menu / End -->
+
+								<!-- Mega Menu -->
+								<li class="dropdown">
+									<a href="portfolio-3cols.html" data-toggle="dropdown" class="dropdown-toggle disabled dropdown-toggle__caret-holder">SUPPORT</a>
+									<a class="dropdown-toggle dropdown-toggle__caret"><b class="caret"></b></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="https://www.infokerjaiccn.id" target="_blank">Info kerja</a></li>
+										<li><a href="portfolio-2cols.html">Registrasi</a></li>
+										<li><a href="portfolio-3cols.html">Syarat & Ketentuan</a></li>
+										<li><a href="portfolio-4cols.html">Proceding</a></li>
+										<li><a href="portfolio-fullw.html">Q & A</a></li>
+									</ul>
+								</li>
+								<!-- Mega Menu / End -->
+
+								<!-- Mega Menu -->
+								<li class="dropdown">
+									<a href="portfolio-3cols.html" data-toggle="dropdown" class="dropdown-toggle disabled dropdown-toggle__caret-holder">TENTANG ICCN</a>
+									<a class="dropdown-toggle dropdown-toggle__caret"><b class="caret"></b></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="portfolio-2cols.html">Sejarah</a></li>
+										<li><a href="portfolio-3cols.html">Pengurus</a></li>
+										<li><a href="portfolio-4cols.html">Anggota ICCN</a></li>
+									</ul>
+								</li>
 								<!-- Mega Menu / End -->
 							</ul><!-- end nav navbar-nav -->
 						</div><!-- end #main-nav -->
@@ -133,11 +156,10 @@
 					</nav><!-- end navbar navbar-default fhmm -->
 				</div>
 			</div>
-
+			
 		</header>
 		<!-- Header / End -->
 
-
+		
 </body>
-
 </html>
