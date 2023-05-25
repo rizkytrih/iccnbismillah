@@ -2,6 +2,8 @@
 <link href="../plugins/quill/quill.core.css" rel="stylesheet" type="text/css" />
         <link href="../plugins/quill/quill.bubble.css" rel="stylesheet" type="text/css" />
         <link href="../plugins/quill/quill.snow.css" rel="stylesheet" type="text/css" />
+        <!-- Dropify -->
+	    <link rel="stylesheet" href="assets/plugin/dropify/css/dropify.min.css">
 
         <?php include 'header.php'; 
 include 'koneksi.php';
@@ -40,7 +42,7 @@ if( mysqli_num_rows($query) < 1 ){
 					<h4 class="box-title">Ubah banner</h4>
 					<!-- /.box-title -->
 					<div class="card-content">
-                    <form action="proses-edit.php" method="POST" enctype="multipart/form-data">
+                    <form action="proses-edit-banner.php" method="POST" enctype="multipart/form-data">
 							<div class="form-group">
 								<label for="exampleInputEmail1">Judul Banner</label>
                                 <input type="hidden" name="id" value="<?php echo $siswa['id_banner'] ?>" />
@@ -53,7 +55,7 @@ if( mysqli_num_rows($query) < 1 ){
 							<div class="form-group">
 								<label for="exampleInputFile">Gambar Banner</label>
                                 <p>Sebaiknya ukuran gambar 1800 x 560</p>
-								<input name="gambar" type="file" class="dropify" data-height="300" />
+								<input name="gambar" type="file" id="input-file-to-destroy" class="dropify" data-max-file-size="2M" >
 							</div>
 							<div class="text-right">
 
@@ -134,8 +136,19 @@ if( mysqli_num_rows($query) < 1 ){
      <!-- Init js-->
      <script src="assets/pages/quilljs-demo.js"></script>
 
+     <!-- Sparkline Chart -->
+	<script src="assets/plugin/chart/sparkline/jquery.sparkline.min.js"></script>
+	<script src="assets/scripts/chart.sparkline.init.min.js"></script>
+
+
     <!-- App js -->
     <script src="assets/js/theme.js"></script>
+
+    <!-- Dropify -->
+	<script src="assets/plugin/dropify/js/dropify.min.js"></script>
+	<script src="assets/scripts/fileUpload.demo.min.js"></script>
+
+	<script src="assets/scripts/main.min.js"></script>
 
 </body>
 
