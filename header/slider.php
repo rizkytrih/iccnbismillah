@@ -13,7 +13,7 @@
 							?>
 							<li data-transition="random" data-slotamount="7" data-masterspeed="1000" data-delay="6000" >
 								<!-- MAIN IMAGE -->
-								<img src="wpadmin/gambar/<?php echo $hasil['gambar']; ?>" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+								<img src="myadmin/gambar/<?php echo $hasil['gambar']; ?>" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
 
 							<!-- LAYER NR. 1 -->
 							<div class="tp-caption large_bold_white customin customout"
@@ -62,7 +62,7 @@
 							?>
 							<li data-transition="random" data-slotamount="7" data-masterspeed="1000" data-delay="6000" >
 								<!-- MAIN IMAGE -->
-								<img src="wpadmin/gambar/<?php echo $hasil2['gambar']; ?>" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+								<img src="myadmin/gambar/<?php echo $hasil2['gambar']; ?>" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
 
 							<!-- LAYER NR. 1 -->
 							<div class="tp-caption large_bold_white customin customout"
@@ -107,7 +107,7 @@
 							?>
 							<li data-transition="random" data-slotamount="7" data-masterspeed="1000" data-delay="6000" >
 								<!-- MAIN IMAGE -->
-								<img src="wpadmin/gambar/<?php echo $hasil3['gambar']; ?>" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+								<img src="myadmin/gambar/<?php echo $hasil3['gambar']; ?>" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
 
 							<!-- LAYER NR. 1 -->
 							<div class="tp-caption large_bold_white customin customout"
@@ -152,7 +152,7 @@
 							?>
 							<li data-transition="random" data-slotamount="7" data-masterspeed="1000" data-delay="6000" >
 								<!-- MAIN IMAGE -->
-								<img src="wpadmin/gambar/<?php echo $hasil4['gambar']; ?>" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+								<img src="myadmin/gambar/<?php echo $hasil4['gambar']; ?>" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
 
 							<!-- LAYER NR. 1 -->
 							<div class="tp-caption large_bold_white customin customout"

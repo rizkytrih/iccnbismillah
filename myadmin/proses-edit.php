@@ -25,7 +25,8 @@ if ($gambar_lama != "") {
         $ekstensi = strtolower(end($x));
         $file_tmp = $_FILES['gambar']['tmp_name'];   
         $angka_acak     = rand(1,999);
-        $nama_gambar_baru = $angka_acak.'-'.$gambar; //menggabungkan angka acak dengan nama file sebenarnya
+        $namaea= "slidebg";
+        $nama_gambar_baru = $angka_acak.'-'.$namaea; //menggabungkan angka acak dengan nama file sebenarnya
         if(in_array($ekstensi, $ekstensi_diperbolehkan) === true)  {
                       move_uploaded_file($file_tmp, 'gambar/'.$nama_gambar_baru); //memindah file gambar ke folder gambar
 
