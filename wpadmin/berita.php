@@ -41,7 +41,7 @@
                                         <table class="table mb-0">
                                             <thead class="thead-light">
                                                 <tr>
-                                                  <th width="30%">Judul</th>
+                                                    <th width="30%">Judul</th>
                                                     <th width="5%">Gambar</th>
                                                     <th width="15%">Tgl. Posting</th>
                                                     <th width="15%">Penulis</th>
