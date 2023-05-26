@@ -18,10 +18,10 @@ $search = isset($_GET['search']) ? $_GET['search'] : '';
             <div class="page-content">
                 
         <div class="container-fluid">
-        <button type="button" class="btn btn-icon btn-icon-right btn-primary btn-sm waves-effect waves-light"><i class="ico fa fa-plus"></i>Tambah Data</button> <br><br>
+            <a href="tambah-event.php"><button type="button" class="btn btn-icon btn-icon-right btn-primary btn-sm waves-effect waves-light"><i class="ico fa fa-plus"></i>Tambah Data</button></a> <br><br>
             <div class="box-content">
                 
-                <h4 class="box-title">BERITA</h4>
+                <h4 class="box-title">Event</h4>
                                 <form action="" method="get">
                 <div class="input-group margin-bottom-20">
 							<input type="text" name="search" class="form-control" placeholder="Search..." value="<?php echo $search; ?>">

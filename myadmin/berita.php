@@ -23,7 +23,7 @@ $search = isset($_GET['search']) ? $_GET['search'] : '';
                 
                 <h4 class="box-title">BERITA</h4>
                                 <form action="" method="get">
-                <div class="input-group margin-bottom-20">
+                             <div class="input-group margin-bottom-20">
 							<input type="text" name="search" class="form-control" placeholder="Search..." value="<?php echo $search; ?>">
 							<div class="input-group-btn"><button type="submit" class="btn btn-violet no-border waves-effect waves-light"><i class="fa fa-search text-white"></i></button></div>
 							<!-- /.input-group-btn -->
