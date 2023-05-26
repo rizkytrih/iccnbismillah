@@ -111,7 +111,7 @@
 								<li class="dropdown fhmm-fw">
 									<a href="index.php">Home</a></li>
 								<li><a href="artikel.php">Artikel</a></li>
-								<li><a href="berita.php">Berita</a></li>
+								<li><a href="list_berita.php">Berita</a></li>
 								<li><a href="forum.php">Forum</a></li>
 
 								<!-- Mega Menu -->
