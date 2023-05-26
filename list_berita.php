@@ -2,118 +2,102 @@
 <html lang="en">
 
 <head>
-
-    <!-- Plugins css -->
+    <!-- CSS Plugin -->
     <link href="../plugins/quill/quill.core.css" rel="stylesheet" type="text/css" />
     <link href="../plugins/quill/quill.bubble.css" rel="stylesheet" type="text/css" />
     <link href="../plugins/quill/quill.snow.css" rel="stylesheet" type="text/css" />
 
-
-    <!-- App css -->
+    <!-- CSS Aplikasi -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/theme.min.css" rel="stylesheet" type="text/css" />
 
     <?php include 'header/header.php';
-    include 'header/koneksi.php'; ?>
+    include 'header/koneksi.php';
+
+    // Mengambil data berita
+    $query = mysqli_query($connection, "SELECT * FROM berita ORDER BY tgl_posting DESC");
+    $news = mysqli_fetch_all($query, MYSQLI_ASSOC);
+    ?>
+    <style>
+    .fixed-article {
+        height: 600px; /* Atur ketinggian sesuai kebutuhan */
+        overflow: auto; /* Tampilkan scrollbar jika konten melebihi ketinggian yang ditentukan */
+    }
+</style>
 </head>
 
 <body>
-    <!-- Header / End -->
+    <!-- Header / Bagian Atas -->
 
-    <!-- Main -->
+    <!-- Konten Utama -->
     <div class="main" role="main">
-
-
         <div class="container">
             <div class="spacer-lg"></div>
             <div class="row">
-                <div class="content col-md-7 col-md-offset-0">
+                <div class="content col-md-9 col-md-offset-0">
                     <div class="container">
-                        <!-- World News Category -->
-
+                        <!-- Bagian Berita -->
                         <h2>Berita</h2>
                         <div class="row">
-                            <?php
-                            $counter = 1;
-                            $query = mysqli_query($connection, "SELECT * FROM berita ORDER BY tgl_posting DESC");
-                            while ($row = mysqli_fetch_array($query)) {
-                                ?>
-                                <div class="project-item<?php if ($counter <= 1) {
-                                    echo " active";
-                                } ?>">
-                                    <div class="col-md-4">
-                                        <!-- Post (Standard Format) -->
-
-                                        <article class="entry entry__standard entry__small entry__single">
+                            <?php foreach ($news as $index => $row) { ?>
+                                <div class="col-md-4">
+                                    <div class="project-item<?php if ($index == 0) echo " active"; ?>">
+                                        <!-- Artikel (Format Standar) -->
+                                        <article class="entry entry__standard entry__small entry__single fixed-article">
                                             <figure class="alignnone entry-thumb">
-
-                                                <a href="berita.php?id=<?php echo $row['id_berita']; ?>"><img
-                                                        class="img-fluid" src="gambar/<?php echo $row['gambar'] ?>"
-                                                        alt="gambar" style="width:400px; height:300px;" /></a>
+                                                <a href="berita.php?id=<?php echo $row['id_berita']; ?>">
+                                                    <img class="img-fluid" src="gambar/<?php echo $row['gambar'] ?>" alt="gambar" style="width: 400px; height: 300px;" />
+                                                </a>
                                             </figure>
                                             <header class="entry-header entry-header__small">
-                                                <h2><a href="berita.php?id=<?php echo $row['id_berita']; ?>"><?php echo $row['judul'] ?></a></h2>
+                                                <h3><a href="berita.php?id=<?php echo $row['id_berita']; ?>"><?php echo $row['judul'] ?></a></h3>
                                                 <div class="entry-meta">
-                                                    <span class="entry-date">
-                                                        <?php echo $row['tgl_posting'] ?>
-                                                    </span>
-                                                    <span class="entry-comments"><a href="#">0 Comments</a></span>
-                                                    <span class="entry-category">in <a href="#">Latest News</a></span>
-                                                    <span class="entry-author">by <a href="#">Dan Fisher</a></span>
+                                                    <span class="entry-date"><?php echo $row['tgl_posting'] ?></span>
+                                                    <span class="entry-comments"><a href="#">0 Komentar</a></span>
+                                                    <span class="entry-category">di <a href="#">Berita Terbaru</a></span>
+                                                    <span class="entry-author">oleh <a href="#">Dan Fisher</a></span>
                                                 </div>
+                                                <div class="excerpt">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi ac mi malesuada vestibulum.
+                                                </div>
+                                                <footer class="entry-footer">
+                                                    <a href="#" class="btn btn-primary btn-sm">Baca Selengkapnya</a>
+                                                </footer>
                                             </header>
-
-
                                         </article>
-
-                                        <!-- Post (Standard Format) / End -->
+                                        <!-- Artikel (Format Standar) / End -->
                                     </div>
-                                    <?php
-                                    $counter++;
-                            }
-                            ?>
-                            </div>
-
-                            <div class="spacer"></div>
-
-                            <div class="spacer"></div>
-                            <!-- World News Category / End -->
-                            <div class="spacer-lg"></div>
-
-                            <ul class="pagination-custom list-unstyled list-inline">
-                                <li><a href="#" class="btn btn-sm btn-primary">1</a></li>
-                                <li><a href="#" class="btn btn-sm btn-default">2</a></li>
-                                <li><a href="#" class="btn btn-sm btn-default">3</a></li>
-                                <li><a href="#" class="btn btn-sm btn-default">&raquo;</a></li>
-                            </ul>
-
+                                </div>
+                            <?php } ?>
                         </div>
-                        <aside class="sidebar col-md-3 col-md-pull-9 col-bordered">
-                            <!-- Widget :: Latest Posts -->
-                            <div>
-
-                            </div>
-                        </aside>
+                   
+                        <!-- Bagian Berita / End -->
+            
+                        <ul class="pagination pagination-custom">
+                            <li><a href="#" class="btn btn-sm btn-primary">1</a></li>
+                            <li><a href="#" class="btn btn-sm btn-default">2</a></li>
+                            <li><a href="#" class="btn btn-sm btn-default">3</a></li>
+                            <li><a href="#" class="btn btn-sm btn-default">&raquo;</a></li>
+                        </ul>
                     </div>
                 </div>
-                </section>
-                <!-- Page Content / End -->
+                <aside class="sidebar col-md-3 col-md-pull-9 col-bordered">
+                    <!-- Widget :: Artikel Terbaru -->
+                </aside>
             </div>
-            <div class="spacer-lg"></div>
+            <!-- Page Content / End -->
+			</div>
+			<div class="spacer-lg"></div>
 
-            <?php include 'footer/footer.php'; ?>
+			<?php include 'footer/footer.php';?>
 
-        </div>
-        <!-- Main / End -->
+		</div>
+		<!-- Main / End -->
+	</div>
     </div>
 
-
-
-
-
-    <!-- Javascript Files
-    ================================================== -->
+    <!-- Berkas JavaScript -->
     <script src="vendor/jquery-1.11.0.min.js"></script>
     <script src="vendor/jquery-migrate-1.2.1.min.js"></script>
     <script src="vendor/bootstrap.min.js"></script>
@@ -131,14 +115,10 @@
     <script src="vendor/mediaelement/mediaelement-and-player.min.js"></script>
     <script src="vendor/jquery.twitter.js"></script>
     <script src="vendor/circliful/js/jquery.circliful.min.js"></script>
-
     <script src="js/custom.js"></script>
-
-
-    <!-- jQuery REVOLUTION Slider  -->
+    <!-- jQuery REVOLUTION Slider -->
     <script src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
     <script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-
     <script>
         jQuery(document).ready(function () {
             jQuery('.tp-banner').revolution({
@@ -150,17 +130,14 @@
                 fullWidth: "on",
                 forceFullWidth: "off",
                 hideCaptionAtLimit: 480,
-                //navigationType: "none",
                 soloArrowLeftHOffset: 20,
                 soloArrowRightHOffset: 20,
                 navigationType: "bullet",
-                navigationArrows: "solo", // nexttobullets, solo (old name verticalcentered), none
-                navigationStyle: "round"  // round, square, navbar, round-old, square-old, navbar-old
+                navigationArrows: "solo",
+                navigationStyle: "round"
             });
         });
     </script>
-
-
 </body>
 
 </html>
