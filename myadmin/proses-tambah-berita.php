@@ -28,6 +28,9 @@ if (isset($_FILES['gambar']) && $_FILES['gambar']['error'] === UPLOAD_ERR_OK) {
         // Jalankan query
         if (mysqli_query($connection, $sql)) {
             echo "Data berhasil disimpan.";
+            // Redirect to berita.php
+            header("Location: berita.php");
+            exit;
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($connection);
         }

@@ -37,8 +37,9 @@ $search = isset($_GET['search']) ? $_GET['search'] : '';
                             <th width="30%">Judul</th>
                             <th width="5%">Gambar</th>
                             <th width="15%">Tgl. Posting</th>
-                            <th width="15%">Jam</th>
+                            <th width="15%">Lokasi Acara</th>
                             <th width="15%">Alamat</th>
+                            <th width="15%">Action</th>
                         </tr>
                     </thead>
                     <tbody id="tableBody">
@@ -46,9 +47,9 @@ $search = isset($_GET['search']) ? $_GET['search'] : '';
                         $results_per_page = 6;
 
                         if (!empty($search)) {
-                            $query = "SELECT * FROM acara WHERE judul LIKE '%$search%' ORDER BY tanggal DESC";
+                            $query = "SELECT * FROM acara WHERE nama_event LIKE '%$search%' ORDER BY tgl_posting DESC";
                         } else {
-                            $query = "SELECT * FROM acara ORDER BY tanggal DESC";
+                            $query = "SELECT * FROM acara ORDER BY tgl_posting DESC";
                         }
 
                         $result = mysqli_query($connection, $query);
@@ -70,10 +71,10 @@ $search = isset($_GET['search']) ? $_GET['search'] : '';
                         ?>
 
                             <tr>
-                                <td><?php echo $d['judul']; ?></td>
-                                <td><img src="../gambar/<?php echo $d['gambar'] ?>" height="75" width="75"></td>
-                                <td><?php echo $d['tanggal']; ?></td>
-                                <td><?php echo $d['jam']; ?></td>
+                                <td><?php echo $d['nama_event']; ?></td>
+                                <td><img src="gambar/acara/<?php echo $d['gambar_event']; ?>"></td>
+                                <td><?php echo $d['tgl_posting']; ?></td>
+                                <td><?php echo $d['tempat_acara']; ?></td>
                                 <td><?php echo $d['alamat']; ?></td>
                                 <td>
                                     <a class="btn btn-primary waves-effect waves-light" href="edit_berita.php?id=<?php echo $d['id']; ?>" role="button"><i class="fa fa-eye"></i></a>

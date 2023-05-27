@@ -5,7 +5,7 @@ include 'koneksi.php';
 // Ambil data dari form
 $judul = $_POST['judul'];
 $teks_berita = $_POST['teks_berita'];
-$id_kategori = 3; // ID kategori berita
+$id_kategori = 4; // ID kategori artikel
 $tgl_posting = date("Y-m-d H:i:s"); // Waktu sekarang
 $id_admin = 1; // ID admin
 
@@ -28,6 +28,9 @@ if (isset($_FILES['gambar']) && $_FILES['gambar']['error'] === UPLOAD_ERR_OK) {
         // Jalankan query
         if (mysqli_query($connection, $sql)) {
             echo "Data berhasil disimpan.";
+            // Redirect to berita.php
+            header("Location: artikel.php");
+            exit;
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($connection);
         }
