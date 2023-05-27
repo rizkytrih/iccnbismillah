@@ -100,9 +100,7 @@
 			max-width: 1800px;
 			margin: 0 auto;
 			padding: 50px;
-			background-color: #f2f2f2;
 			border-radius: 5px;
-			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 			text-align: justify;
 		}
 	</style>
@@ -173,20 +171,12 @@
 										var map = new mapboxgl.Map({
 											container: 'peta',
 											style: 'mapbox://styles/mapbox/streets-v11',
-											center: [<?php echo $d['lokasi_longitude']; ?>, <?php echo $d['lokasi_latitude']; ?>],
+											center: [<?php echo $d['lokasi_peta']; ?>],
 											zoom: 9
 										});
 
-										new mapboxgl.Marker().setLngLat([<?php echo $d['lokasi_longitude']; ?>, <?php echo $d['lokasi_latitude']; ?>])
+										new mapboxgl.Marker().setLngLat([<?php echo $d['lokasi_peta']; ?>])
 											.addTo(map)
-
-										var geocoder = new MapboxGeocoder({
-											accessToken: mapboxgl.accessToken,
-											mapboxgl: mapboxgl,
-											marker: false,
-											placeholder: 'Masukan kata kunci...',
-											zoom: 20
-										});
 
 										map.addControl(geocoder);
 									</script>

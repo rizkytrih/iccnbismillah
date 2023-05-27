@@ -88,8 +88,7 @@
                                         <div class="button-wrapper">
                                             <a href="berita.php?id=<?php echo $row['id_berita']; ?>" class="btn btn-primary btn-sm">Baca Selengkapnya</a>
                                         </div>
-                                    </footer>
-                            -->
+                                    </footer>-->
                                         </article>
 
                                         <!-- Artikel (Format Standar) / End -->
