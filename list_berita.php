@@ -20,23 +20,28 @@
     $news = mysqli_fetch_all($query, MYSQLI_ASSOC);
     ?>
     <style>
-.entry-header {
-    overflow: hidden; /* Mengatasi float dari elemen sebelumnya */
-}
-    .fixed-article {
-        height: 600px; /* Atur ketinggian sesuai kebutuhan */
-    }
-    .entry-footer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 10px;
-}
-    .button-wrapper {
-    width: 100%;
-    text-align: left;
-    }
-</style>
+        .entry-header {
+            overflow: hidden;
+            /* Mengatasi float dari elemen sebelumnya */
+        }
+
+        .fixed-article {
+            height: 600px;
+            /* Atur ketinggian sesuai kebutuhan */
+        }
+
+        .entry-footer {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 10px;
+        }
+
+        .button-wrapper {
+            width: 100%;
+            text-align: left;
+        }
+    </style>
 </head>
 
 <body>
@@ -54,41 +59,47 @@
                         <div class="row">
                             <?php foreach ($news as $index => $row) { ?>
                                 <div class="col-md-4">
-                                    <div class="project-item<?php if ($index == 0) echo " active"; ?>">
+                                    <div class="project-item<?php if ($index == 0)
+                                        echo " active"; ?>">
                                         <!-- Artikel (Format Standar) -->
                                         <article class="entry entry__standard entry__small entry__single fixed-article">
-                                    <figure class="alignnone entry-thumb">
-                                        <a href="berita.php?id=<?php echo $row['id_berita']; ?>">
-                                            <img class="img-fluid" src="gambar/<?php echo $row['gambar'] ?>" alt="gambar" style="width: 400px; height: 300px;" />
-                                        </a>
-                                    </figure>
-                                    <header class="entry-header entry-header__small">
-                                        <h3 style="color: black;"><a style="color: black;" href="berita.php?id=<?php echo $row['id_berita']; ?>"><?php echo $row['judul'] ?></a></h3>
-                                        <div class="entry-meta">
-                                            <span class="entry-date"><?php echo $row['tgl_posting'] ?></span>
-                                            <span class="entry-comments"><a href="#">0 Komentar</a></span>
-                                            <span class="entry-category">di <a href="#">Berita Terbaru</a></span>
-                                            <span class="entry-author">oleh <a href="#">Dan Fisher</a></span>
-                                        </div>
-                                        <div class="excerpt">
-                                            <?php echo substr($row['teks_berita'], 0, 175); ?>...
-                                        </div>
-                                    </header>
+                                            <figure class="alignnone entry-thumb">
+                                                <a href="berita.php?id=<?php echo $row['id_berita']; ?>">
+                                                    <img class="img-fluid" src="gambar/<?php echo $row['gambar'] ?>"
+                                                        alt="gambar" style="width: 400px; height: 300px;" />
+                                                </a>
+                                            </figure>
+                                            <header class="entry-header entry-header__small">
+                                                <h3 style="color: black;"><a style="color: black;"
+                                                        href="berita.php?id=<?php echo $row['id_berita']; ?>"><?php echo $row['judul'] ?></a></h3>
+                                                <div class="entry-meta">
+                                                    <span class="entry-date">
+                                                        <?php echo $row['tgl_posting'] ?>
+                                                    </span>
+                                                    <span class="entry-comments"><a href="#">0 Komentar</a></span>
+                                                    <span class="entry-category">di <a href="#">Berita Terbaru</a></span>
+                                                    <span class="entry-author">oleh <a href="#">Dan Fisher</a></span>
+                                                </div>
+                                                <div class="excerpt">
+                                                    <?php echo substr($row['teks_berita'], 0, 175); ?>...
+                                                </div>
+                                            </header><!--
                                     <footer class="entry-footer">
                                         <div class="button-wrapper">
                                             <a href="berita.php?id=<?php echo $row['id_berita']; ?>" class="btn btn-primary btn-sm">Baca Selengkapnya</a>
                                         </div>
                                     </footer>
-                                </article>
+                            -->
+                                        </article>
 
                                         <!-- Artikel (Format Standar) / End -->
                                     </div>
                                 </div>
                             <?php } ?>
                         </div>
-                   
+
                         <!-- Bagian Berita / End -->
-            
+
                         <ul class="pagination pagination-custom">
                             <li><a href="#" class="btn btn-sm btn-primary">1</a></li>
                             <li><a href="#" class="btn btn-sm btn-default">2</a></li>
@@ -102,14 +113,14 @@
                 </aside>
             </div>
             <!-- Page Content / End -->
-			</div>
-			<div class="spacer-lg"></div>
+        </div>
+        <div class="spacer-lg"></div>
 
-			<?php include 'footer/footer.php';?>
+        <?php include 'footer/footer.php'; ?>
 
-		</div>
-		<!-- Main / End -->
-	</div>
+    </div>
+    <!-- Main / End -->
+    </div>
     </div>
 
     <!-- Berkas JavaScript -->
