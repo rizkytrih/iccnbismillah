@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['level']) || $_SESSION['level'] != 'admin') {
+    header("Location: login.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -184,7 +193,7 @@
 			<i class="ti-user"></i>
 			<ul class="sub-ico-item">
 				<li><a href="#">Settings</a></li>
-				<li><a class="js__logout" href="#">Log Out</a></li>
+				<li><a class="js__logout" href="logout.php">Log Out</a></li>
 			</ul>
 			<!-- /.sub-ico-item -->
 		</div>

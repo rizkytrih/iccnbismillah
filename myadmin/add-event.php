@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (!isset($_SESSION['1'])) {
+    header("Location: login.php");
+    exit();
+}
+?>
+
+
 <!-- Plugins css -->
 <link href="../plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.css" rel="stylesheet" type="text/css" />
     <link href="../plugins/daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />

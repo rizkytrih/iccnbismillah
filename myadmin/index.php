@@ -1,4 +1,13 @@
-<?php include 'koneksi.php';?>
+<?php
+session_start();
+
+if (!isset($_SESSION['level']) || $_SESSION['level'] != 'admin') {
+    header("Location: login.php");
+    exit();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
