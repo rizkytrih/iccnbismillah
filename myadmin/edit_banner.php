@@ -35,9 +35,17 @@ if( mysqli_num_rows($query) < 1 ){
         <div class="main-content">
 
             <div class="page-content">
-                <div class="container-fluid">
 
+
+            
+                <div class="container-fluid">
+                
+                <a href="javascript:history.go(-1)"><button type="button" class="btn btn-icon btn-icon-right btn-primary btn-sm waves-effect waves-light"><i class="ico fa fa-arrow-left"></i>Kembali</button></a> <br><br>
+
+                </div>
+                
                 <div class="col-lg-6 col-xs-12">
+                    
 				<div class="box-content card white">
 					<h4 class="box-title">Ubah banner</h4>
 					<!-- /.box-title -->

@@ -18,7 +18,7 @@ $search = isset($_GET['search']) ? $_GET['search'] : '';
             <div class="page-content">
                 
         <div class="container-fluid">
-        <button type="button" class="btn btn-icon btn-icon-right btn-primary btn-sm waves-effect waves-light"><i class="ico fa fa-plus"></i>Tambah Data</button> <br><br>
+        <a href="tambah-berita.php"><button type="button" class="btn btn-icon btn-icon-right btn-primary btn-sm waves-effect waves-light"><i class="ico fa fa-plus"></i>Tambah Data</button> <br><br></a>
             <div class="box-content">
                 
                 <h4 class="box-title">BERITA</h4>
