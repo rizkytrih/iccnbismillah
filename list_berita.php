@@ -63,7 +63,7 @@
                                         </a>
                                     </figure>
                                     <header class="entry-header entry-header__small">
-                                        <h3><a href="berita.php?id=<?php echo $row['id_berita']; ?>"><?php echo $row['judul'] ?></a></h3>
+                                        <h3 style="color: black;"><a style="color: black;" href="berita.php?id=<?php echo $row['id_berita']; ?>"><?php echo $row['judul'] ?></a></h3>
                                         <div class="entry-meta">
                                             <span class="entry-date"><?php echo $row['tgl_posting'] ?></span>
                                             <span class="entry-comments"><a href="#">0 Komentar</a></span>
