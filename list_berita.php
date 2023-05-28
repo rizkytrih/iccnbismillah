@@ -26,7 +26,7 @@
         }
 
         .fixed-article {
-            height: 600px;
+            height: 540px;
             /* Atur ketinggian sesuai kebutuhan */
         }
 
@@ -81,9 +81,11 @@
                                                     <span class="entry-author">oleh <a href="#">Dan Fisher</a></span>
                                                 </div>
                                                 <div class="excerpt">
-                                                    <?php echo substr($row['teks_berita'], 0, 175); ?>...
+                                                    <?php echo substr($row['teks_berita'], 0, 180); ?>...
+                                                    <a href="berita.php?id=<?php echo $row['id_berita']; ?>">(Baca Selengkapnya)</a>
                                                 </div>
-                                            </header><!--
+                                            </header>
+                                            <!--
                                     <footer class="entry-footer">
                                         <div class="button-wrapper">
                                             <a href="berita.php?id=<?php echo $row['id_berita']; ?>" class="btn btn-primary btn-sm">Baca Selengkapnya</a>
