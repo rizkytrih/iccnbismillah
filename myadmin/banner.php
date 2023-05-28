@@ -1,4 +1,7 @@
 <?php include 'header.php'; 
+
+
+
 include 'koneksi.php';?>
         <!-- ============================================================== -->
         <!-- Start right Content here -->
@@ -31,7 +34,7 @@ include 'koneksi.php';?>
                                                     <th scope="row"><?php echo $no++; ?></th>
                                                     <td><?php echo $d['judul']; ?></td>
                                                     <td><?php echo $d['isi']; ?></td>
-                                                    <td><img src="gambar/<?php echo $d['gambar'] ?>" width="15%"></td>
+                                                    <td><img src="<?php echo $d['gambar'] ?>" width="15%"></td>
                                                     <td>
                                                         <a href="edit_banner.php?id=<?php echo $d['id_banner']; ?>" class=""><button type="button" class="btn btn-primary waves-effect waves-light"><i class="ico ico-left fa fa-flag"></i>Ubah</button></a>
                                                     </td>         

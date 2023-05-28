@@ -92,7 +92,7 @@ if( mysqli_num_rows($query) < 1 ){
 					<!-- /.box-title -->
 					<div class="card-content">
 						<div class="form-group margin-bottom-0">
-	                       <img src="gambar/<?php echo $siswa['gambar']; ?>"">
+	                       <img src="<?php echo $siswa['gambar']; ?>"">
 						</div>
 					</div>
 					<!-- /.card-content -->

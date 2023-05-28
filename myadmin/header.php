@@ -43,6 +43,22 @@ if (!isset($_SESSION['level']) || $_SESSION['level'] != 'admin') {
 	<link rel="stylesheet" href="assets/plugin/fullcalendar/fullcalendar.min.css">
 	<link rel="stylesheet" href="assets/plugin/fullcalendar/fullcalendar.print.css" media='print'>
 
+	<style>
+    .logout-link {
+      color: blue;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function confirmLogout() {
+      var result = confirm("Apakah Anda yakin ingin logout?");
+      if (result) {
+        window.location.href = "logout.php"; // Mengarahkan ke logout.php
+      }
+    }
+  </script>
+
 </head>
 
 <body>
@@ -193,7 +209,7 @@ if (!isset($_SESSION['level']) || $_SESSION['level'] != 'admin') {
 			<i class="ti-user"></i>
 			<ul class="sub-ico-item">
 				<li><a href="#">Settings</a></li>
-				<li><a class="js__logout" href="logout.php">Log Out</a></li>
+				<li><a class="logout-link" onclick="confirmLogout()">Log Out</a></li>
 			</ul>
 			<!-- /.sub-ico-item -->
 		</div>
