@@ -11,8 +11,6 @@ $search = isset($_GET['search']) ? $_GET['search'] : '';
 <!-- Start right Content here -->
 <!-- ============================================================== -->
 <div class="main-content">
-        
-
             
     
             <div class="page-content">

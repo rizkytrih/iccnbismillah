@@ -18,6 +18,7 @@
     // Mengambil data berita
     $query = mysqli_query($connection, "SELECT * FROM berita ORDER BY tgl_posting DESC");
     $news = mysqli_fetch_all($query, MYSQLI_ASSOC);
+
     ?>
     <style>
         .entry-header {
@@ -78,7 +79,8 @@
                                                     </span>
                                                     <span class="entry-comments"><a href="#">0 Komentar</a></span>
                                                     <span class="entry-category">di <a href="#">Berita Terbaru</a></span>
-                                                    <span class="entry-author">oleh <a href="#">Dan Fisher</a></span>
+
+                                                    <span class="entry-author">oleh <a href="#">Fisher</a></span>
                                                 </div>
                                                 <div class="excerpt">
                                                     <?php echo substr($row['teks_berita'], 0, 180); ?>...

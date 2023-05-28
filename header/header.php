@@ -119,7 +119,7 @@
 									<a href="portfolio-3cols.html" data-toggle="dropdown" class="dropdown-toggle disabled dropdown-toggle__caret-holder">PROGRAM</a>
 									<a class="dropdown-toggle dropdown-toggle__caret"><b class="caret"></b></a>
 									<ul class="dropdown-menu" role="menu">
-										<li><a href="portfolio-2cols.html">Event</a></li>
+										<li><a href="eventv2.php">Event</a></li>
 										<li><a href="portfolio-3cols.html">Program Kerja</a></li>
 									</ul>
 								</li>
