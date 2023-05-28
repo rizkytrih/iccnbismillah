@@ -1,5 +1,22 @@
 <?php
-include 'header.php';
+
+session_start();
+
+// Periksa apakah pengguna telah login
+if (!isset($_SESSION['admin']) && !isset($_SESSION['level'])) {
+    header('Location: login.php');
+    exit();
+}
+
+// Periksa level pengguna untuk menentukan header yang digunakan
+if (isset($_SESSION['level'])) {
+    if ($_SESSION['level'] === 'author') {
+        include 'header2.php'; // Gunakan header2.php untuk level author
+    } else {
+        include 'header.php'; // Gunakan header1.php untuk level admin
+    }
+}
+
 include 'koneksi.php';
 
 // Ambil nilai pencarian dari URL jika ada
@@ -73,7 +90,7 @@ $search = isset($_GET['search']) ? $_GET['search'] : '';
                                 <td><?php echo $d['judul']; ?></td>
                                 <td><img src="../gambar/<?php echo $d['gambar'] ?>" height="75" width="75"></td>
                                 <td><?php echo $d['tgl_posting']; ?></td>
-                                <td><?php echo $d['nama_lengkap']; ?></td>
+                                <td><?php echo $d['nama_awal']; ?> <?php echo $d['nama_akhir']; ?></td>
                                 <td>
                                     <a class="btn btn-primary waves-effect waves-light" href="edit_berita.php?id=<?php echo $d['id_berita']; ?>" role="button"><i class="fa fa-eye"></i></a>
                                     <a class="btn btn-warning waves-effect waves-light" href="edit_berita.php?id=<?php echo $d['id_berita']; ?>" role="button"><i class="fa fa-edit"></i></a>

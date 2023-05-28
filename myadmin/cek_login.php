@@ -17,8 +17,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['nm_admin'] = $data['nama_lengkap'];
         $_SESSION['level'] = $data['level'];
 
-        header("Location: index.php");
-        exit();
+        // Redirect berdasarkan level
+        if ($_SESSION['level'] == 'author') {
+            header("Location: header2.php");
+            exit();
+        } else {
+            header("Location: index.php");
+            exit();
+        }
     } else {
         // Login gagal
         $_SESSION['login_error'] = "Username or password is incorrect.";

@@ -1,21 +1,7 @@
 <?php
 
-
-// Periksa apakah sesi admin aktif
-if (!isset($_SESSION['admin'])) {
-    // Redirect ke halaman login jika tidak ada sesi admin aktif
+if (!isset($_SESSION['level']) || $_SESSION['level'] != 'author') {
     header("Location: login.php");
-    exit();
-}
-
-// Periksa level user
-$allowedLevels = array('admin', 'author');
-$userLevel = $_SESSION['level'];
-
-// Periksa apakah level user terdaftar dalam daftar level yang diizinkan
-if (!in_array($userLevel, $allowedLevels)) {
-    // Redirect ke halaman error atau halaman lain yang sesuai
-    header("Location: error.php");
     exit();
 }
 ?>
@@ -90,9 +76,7 @@ if (!in_array($userLevel, $allowedLevels)) {
 				<li>
 					<a class="waves-effect" href="dash.php"><i class="menu-icon ti-dashboard"></i><span>Dashboard</span></a>
 				</li>
-				<li>
-					<a class="waves-effect" href="banner.php"><i class="menu-icon ti-calendar"></i><span>Banner</span></a>
-				</li>
+				
 				<!-- <li>
 					<a class="waves-effect parent-item js__control" href="#"><i class="menu-icon ti-bar-chart"></i><span>Charts</span><span class="menu-arrow fa fa-angle-down"></span></a>
 					<ul class="sub-menu js__content">
@@ -124,33 +108,7 @@ if (!in_array($userLevel, $allowedLevels)) {
 					<a class="" href="berita.php"><i class="menu-icon ti-flag"></i><span>Berita</span><span class=""></span></a>
 					<!-- /.sub-menu js__content -->
 				</li>
-				<li>
-					<a class="waves-effect parent-item js__control" href="event.php"><i class="menu-icon ti-desktop"></i><span>Program</span><span class="menu-arrow fa fa-angle-down"></span></a>
-					<ul class="sub-menu js__content">
-						<li><a href="event.php">Event</a></li>
-						<li><a href="proker.php">Program Kerja</a></li>
-					</ul>
-					<!-- /.sub-menu js__content -->
-				</li>
-				<li>
-					<a class="waves-effect parent-item js__control" href="#"><i class="menu-icon ti-layout"></i><span>Support</span><span class="menu-arrow fa fa-angle-down"></span></a>
-					<ul class="sub-menu js__content">
-						<li><a href="tables-basic.html">Registrasi</a></li>
-						<li><a href="tables-datatable.html">Syarat & Ketentuan</a></li>
-						<li><a href="tables-responsive.html">Proceding</a></li>
-						<li><a href="tables-editable.html">Q & A</a></li>
-					</ul>
-					<!-- /.sub-menu js__content -->
-				</li>
-				<li>
-					<a class="waves-effect parent-item js__control" href="#"><i class="menu-icon ti-layout-accordion-merged"></i><span>About</span><span class="menu-arrow fa fa-angle-down"></span></a>
-					<ul class="sub-menu js__content">
-						<li><a href="tables-basic.html">Sejarah</a></li>
-						<li><a href="tables-datatable.html">Pengurus</a></li>
-						<li><a href="tables-responsive.html">Anggota ICCN</a></li>
-					</ul>
-					<!-- /.sub-menu js__content -->
-				</li>
+				
 			</ul>
 			<!-- /.menu js__accordion -->
 			<h5 class="title">Setting</h5>

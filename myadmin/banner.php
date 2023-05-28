@@ -1,7 +1,5 @@
 <?php include 'header.php'; 
 
-
-
 include 'koneksi.php';?>
         <!-- ============================================================== -->
         <!-- Start right Content here -->

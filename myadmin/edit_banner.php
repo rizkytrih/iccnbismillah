@@ -5,7 +5,7 @@
         <!-- Dropify -->
 	    <link rel="stylesheet" href="assets/plugin/dropify/css/dropify.min.css">
 
-        <?php include 'header.php'; 
+<?php include 'header.php'; 
 include 'koneksi.php';
 
 // kalau tidak ada id di query string
