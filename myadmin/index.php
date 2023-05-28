@@ -76,7 +76,7 @@ if (!isset($_SESSION['level']) || $_SESSION['level'] != 'admin') {
 			<!-- /.title -->
 			<ul class="menu js__accordion">
 				<li>
-					<a class="waves-effect" href="dash.php"><i class="menu-icon ti-dashboard"></i><span>Dashboard</span></a>
+					<a class="waves-effect" href="index.php"><i class="menu-icon ti-dashboard"></i><span>Dashboard</span></a>
 				</li>
 				<li>
 					<a class="waves-effect" href="banner.php"><i class="menu-icon ti-calendar"></i><span>Banner</span></a>

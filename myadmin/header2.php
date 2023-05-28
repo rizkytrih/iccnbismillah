@@ -74,7 +74,7 @@ if (!isset($_SESSION['level']) || $_SESSION['level'] != 'author') {
 			<!-- /.title -->
 			<ul class="menu js__accordion">
 				<li>
-					<a class="waves-effect" href="dash.php"><i class="menu-icon ti-dashboard"></i><span>Dashboard</span></a>
+					<a class="waves-effect" href="index.php"><i class="menu-icon ti-dashboard"></i><span>Dashboard</span></a>
 				</li>
 				
 				<!-- <li>
