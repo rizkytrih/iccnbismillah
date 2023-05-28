@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Redirect berdasarkan level
         if ($_SESSION['level'] == 'author') {
-            header("Location: header2.php");
+            header("Location: artikel.php");
             exit();
         } else {
             header("Location: index.php");

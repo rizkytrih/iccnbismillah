@@ -1,5 +1,6 @@
 <?php
 
+
 if (!isset($_SESSION['level']) || $_SESSION['level'] != 'author') {
     header("Location: login.php");
     exit();
