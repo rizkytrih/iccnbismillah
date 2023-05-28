@@ -1,6 +1,22 @@
+<?php
 
+session_start();
 
-<?php include 'header.php'; 
+// Periksa apakah pengguna telah login
+if (!isset($_SESSION['admin']) && !isset($_SESSION['level'])) {
+    header('Location: login.php');
+    exit();
+}
+
+// Periksa level pengguna untuk menentukan header yang digunakan
+if (isset($_SESSION['level'])) {
+    if ($_SESSION['level'] === 'author') {
+        include 'header2.php'; // Gunakan header2.php untuk level author
+    } else {
+        include 'header.php'; // Gunakan header1.php untuk level admin
+    }
+}
+
 include 'koneksi.php'; 
 $id_admin = $_SESSION['id_admin'];
 $query = mysqli_query($connection, "SELECT admin.*, pendidikan.* FROM admin

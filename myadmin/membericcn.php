@@ -51,11 +51,11 @@ $search = isset($_GET['search']) ? $_GET['search'] : '';
                 <table class="table">
                     <thead>
                         <tr>
-                            <th width="30%">Judul</th>
-                            <th width="5%">Gambar</th>
-                            <th width="15%">Tgl. Posting</th>
-                            <th width="15%">Lokasi Acara</th>
-                            <th width="15%">Alamat</th>
+                            <th width="25%">Nama</th>
+                            <th width="5%">Username</th>
+                            <th width="15%">Email</th>
+                            <th width="15%">No Hp</th>
+                            <th width="15%">Foto</th>
                             <th width="15%">Action</th>
                         </tr>
                     </thead>
@@ -64,9 +64,9 @@ $search = isset($_GET['search']) ? $_GET['search'] : '';
                         $results_per_page = 6;
 
                         if (!empty($search)) {
-                            $query = "SELECT * FROM acara WHERE nama_event LIKE '%$search%' ORDER BY tgl_posting DESC";
+                            $query = "SELECT * FROM admin WHERE nama_awal LIKE '%$search%' ORDER BY tgl_post DESC";
                         } else {
-                            $query = "SELECT * FROM acara ORDER BY tgl_posting DESC";
+                            $query = "SELECT * FROM admin ORDER BY tgl_post DESC";
                         }
 
                         $result = mysqli_query($connection, $query);
@@ -88,15 +88,15 @@ $search = isset($_GET['search']) ? $_GET['search'] : '';
                         ?>
 
                             <tr>
-                                <td><?php echo $d['nama_event']; ?></td>
+                                <td><?php echo $d['nama_awal']; ?> <?php echo $d['nama_akhir']; ?></td>
+                                <td><?php echo $d['username']; ?></td>
+                                <td><?php echo $d['email']; ?></td>
+                                <td><?php echo $d['no_hp']; ?></td>
                                 <td><img src="gambar/acara/<?php echo $d['gambar_event']; ?>"></td>
-                                <td><?php echo $d['tgl_posting']; ?></td>
-                                <td><?php echo $d['tempat_acara']; ?></td>
-                                <td><?php echo $d['alamat']; ?></td>
                                 <td>
-                                    <a class="btn btn-primary waves-effect waves-light" href="edit_berita.php?id=<?php echo $d['id']; ?>" role="button"><i class="fa fa-eye"></i></a>
-                                    <a class="btn btn-warning waves-effect waves-light" href="edit_berita.php?id=<?php echo $d['id']; ?>" role="button"><i class="fa fa-edit"></i></a>
-                                    <a class="btn btn-danger waves-effect waves-light" href="edit_berita.php?id=<?php echo $d['id']; ?>" role="button"><i class="fa fa-trash"></i></a>
+                                    <a class="btn btn-primary waves-effect waves-light" href="edit_berita.php?id=<?php echo $d['id_admin']; ?>" role="button"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-warning waves-effect waves-light" href="edit_berita.php?id=<?php echo $d['id_admin']; ?>" role="button"><i class="fa fa-edit"></i></a>
+                                    <a class="btn btn-danger waves-effect waves-light" href="edit_berita.php?id=<?php echo $d['id_admin']; ?>" role="button"><i class="fa fa-trash"></i></a>
                                 </td>
                             </tr>
                         <?php

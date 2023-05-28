@@ -153,11 +153,14 @@ if (!in_array($userLevel, $allowedLevels)) {
 				</li>
 			</ul>
 			<!-- /.menu js__accordion -->
-			<h5 class="title">Setting</h5>
+			<h5 class="title">Pengaturan Akun</h5>
 			<!-- /.title -->
 			<ul class="menu js__accordion">
 				<li>
-					<a class="waves-effect" href="profile.html"><i class="menu-icon ti-user"></i><span>Profile</span></a>
+					<a class="waves-effect" href="profile.php"><i class="menu-icon ti-user"></i><span>Profil saya</span></a>
+				</li>
+				<li>
+					<a class="waves-effect" href="membericcn.php"><i class="menu-icon ti-user"></i><span>Member ICCN</span></a>
 				</li>
 				<li>
 					<a class="waves-effect" href="inbox.html"><i class="menu-icon ti-email"></i><span>Mail</span><span class="notice notice-danger">New</span></a>
