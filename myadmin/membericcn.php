@@ -1,23 +1,22 @@
 <?php
-
 session_start();
 
-// Periksa apakah pengguna telah login
-if (!isset($_SESSION['admin']) && !isset($_SESSION['level'])) {
-    header('Location: login.php');
+// Periksa apakah pengguna sudah login dan memiliki level admin
+if(isset($_SESSION['admin']) && $_SESSION['admin'] == 1 && isset($_SESSION['level']) && $_SESSION['level'] == 'admin') {
+    // Pengguna memiliki level admin, tampilkan konten halaman tambah_event.php di sini
+    // ...
+    // ...
+    // Tambahkan kode HTML atau PHP untuk menampilkan konten halaman tambah_event.php
+    echo "Selamat datang di halaman tambah_event.php. Hanya admin yang dapat mengakses halaman ini.";
+} else {
+    // Pengguna tidak memiliki level admin, arahkan kembali ke halaman login
+    header("Location: tolak.php");
     exit();
 }
 
-// Periksa level pengguna untuk menentukan header yang digunakan
-if (isset($_SESSION['level'])) {
-    if ($_SESSION['level'] === 'author') {
-        include 'header2.php'; // Gunakan header2.php untuk level author
-    } else {
-        include 'header.php'; // Gunakan header1.php untuk level admin
-    }
-}
-
+include 'header.php';
 include 'koneksi.php';
+
 
 // Ambil nilai pencarian dari URL jika ada
 $search = isset($_GET['search']) ? $_GET['search'] : '';

@@ -1,5 +1,26 @@
-<?php include 'header.php';
-include 'koneksi.php'; ?>
+<?php
+session_start();
+
+// Periksa apakah pengguna telah login
+if (!isset($_SESSION['admin']) && !isset($_SESSION['level'])) {
+    header('Location: tolak.php');
+    exit();
+}
+
+// Periksa level pengguna untuk menentukan header yang digunakan
+if (isset($_SESSION['level'])) {
+    if ($_SESSION['level'] === 'author') {
+        include 'header2.php'; // Gunakan header2.php untuk level author
+    } else {
+        include 'header.php'; // Gunakan header1.php untuk level admin
+    }
+}
+
+
+// Level pengguna adalah admin, tampilkan header yang sesuai
+
+
+include 'koneksi.php';?>
 
 <head>
     <!-- TinyMCE -->

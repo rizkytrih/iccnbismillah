@@ -55,7 +55,7 @@ $search = isset($_GET['search']) ? $_GET['search'] : '';
                             <th width="5%">Gambar</th>
                             <th width="15%">Tgl. Posting</th>
                             <th width="15%">Penulis</th>
-                            <th width="15%">Pilihan</th>
+                            <th width="15%">Action</th>
                         </tr>
                     </thead>
                     <tbody id="tableBody">
@@ -92,9 +92,9 @@ $search = isset($_GET['search']) ? $_GET['search'] : '';
                                 <td><?php echo $d['tgl_posting']; ?></td>
                                 <td><?php echo $d['nama_awal']; ?> <?php echo $d['nama_akhir']; ?></td>
                                 <td>
-                                    <a class="btn btn-primary waves-effect waves-light" href="edit_berita.php?id=<?php echo $d['id_berita']; ?>" role="button"><i class="fa fa-eye"></i></a>
-                                    <a class="btn btn-warning waves-effect waves-light" href="edit_berita.php?id=<?php echo $d['id_berita']; ?>" role="button"><i class="fa fa-edit"></i></a>
-                                    <a class="btn btn-danger waves-effect waves-light" href="edit_berita.php?id=<?php echo $d['id_berita']; ?>" role="button"><i class="fa fa-trash"></i></a>
+                                    <a class="btn btn-primary waves-effect waves-light" href="lihat-artikel.php?id=<?php echo $d['id_berita']; ?>" role="button"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-warning waves-effect waves-light" href="edit_artikel.php?id=<?php echo $d['id_berita']; ?>" role="button"><i class="fa fa-edit"></i></a>
+                                    <a class="btn btn-danger waves-effect waves-light" href="hapus-artiber.php?id=<?php echo $d['id_berita']; ?>" role="button" onclick="return confirm('Apakah Anda yakin ingin menghapus artikel ini?')"><i class="fa fa-trash"></i></a>
                                 </td>
                             </tr>
                         <?php

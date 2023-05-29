@@ -1,5 +1,23 @@
-<?php include 'header.php';
-include 'koneksi.php'; ?>
+<?php
+session_start();
+
+// Periksa apakah pengguna sudah login dan memiliki level admin
+if(isset($_SESSION['admin']) && $_SESSION['admin'] == 1 && isset($_SESSION['level']) && $_SESSION['level'] == 'admin') {
+    // Pengguna memiliki level admin, tampilkan konten halaman tambah_event.php di sini
+    // ...
+    // ...
+    // Tambahkan kode HTML atau PHP untuk menampilkan konten halaman tambah_event.php
+    echo "Selamat datang di halaman tambah_event.php. Hanya admin yang dapat mengakses halaman ini.";
+} else {
+    // Pengguna tidak memiliki level admin, arahkan kembali ke halaman login
+    header("Location: tolak.php");
+    exit();
+}
+
+include 'header.php';
+include 'koneksi.php';
+?>
+
 
 <head>
     <!-- TinyMCE -->

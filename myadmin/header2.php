@@ -119,9 +119,6 @@ if (!isset($_SESSION['level']) || $_SESSION['level'] != 'author') {
 					<a class="waves-effect" href="profile.php"><i class="menu-icon ti-user"></i><span>Profile</span></a>
 				</li>
 				<li>
-					<a class="waves-effect" href="membericcn.php"><i class="menu-icon ti-user"></i><span>Member ICCN</span></a>
-				</li>
-				<li>
 					<a class="waves-effect" href="inbox.html"><i class="menu-icon ti-email"></i><span>Mail</span><span class="notice notice-danger">New</span></a>
 				</li>
 				<li>
