@@ -204,8 +204,10 @@
 						</ul>
 						-->
 					</div>
+					<!--
 					<aside class="sidebar col-md-3 col-md-pull-9 col-bordered">
-						<!-- Widget :: Latest Posts -->
+						--><!-- Widget :: Latest Posts -->
+						<!--
 						<div>
 							<?php
 							include 'Calendar.php';
@@ -238,6 +240,7 @@
 							</html>
 						</div>
 					</aside>
+					-->
 				</div>
 			</div>
 		</section>
