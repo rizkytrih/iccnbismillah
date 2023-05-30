@@ -118,7 +118,7 @@ if( mysqli_num_rows($query) < 1 ){
 										<span class="entry-date"><?php echo $d['tgl_posting']; ?></span>
 										<span class="entry-comments"><a href="#"><?php echo $d['dilihat']; ?> Views</a></span>
 										<span class="entry-category">in <a href="#">Berita</a></span>
-										<span class="entry-author">by <a href="#"><?php echo $d['nama_lengkap']; ?></a></span>
+										<span class="entry-author">by <a href="#"><?php echo $d['nama_awal']; ?> <?php echo $d['nama_akhir']; ?></a></span>
 									</div>
 								</header>
 								<figure class="alignnone entry-thumb">

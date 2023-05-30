@@ -1,15 +1,22 @@
 <?php
 session_start();
 
+// Periksa apakah pengguna sudah login
+if (!isset($_SESSION['admin']) || !isset($_SESSION['level'])) {
+    // Pengguna belum login, arahkan ke halaman login
+    header("Location: login.php");
+    exit();
+}
+
 // Periksa apakah pengguna sudah login dan memiliki level admin
-if(isset($_SESSION['admin']) && $_SESSION['admin'] == 1 && isset($_SESSION['level']) && $_SESSION['level'] == 'admin') {
+if ($_SESSION['admin'] == 1 && $_SESSION['level'] == 'admin') {
     // Pengguna memiliki level admin, tampilkan konten halaman tambah_event.php di sini
     // ...
     // ...
     // Tambahkan kode HTML atau PHP untuk menampilkan konten halaman tambah_event.php
     echo "Selamat datang di halaman tambah_event.php. Hanya admin yang dapat mengakses halaman ini.";
 } else {
-    // Pengguna tidak memiliki level admin, arahkan kembali ke halaman login
+    // Pengguna tidak memiliki level admin, arahkan kembali ke halaman tolak.php
     header("Location: tolak.php");
     exit();
 }
@@ -91,7 +98,7 @@ $search = isset($_GET['search']) ? $_GET['search'] : '';
                                 <td><?php echo $d['tempat_acara']; ?></td>
                                 <td><?php echo $d['alamat']; ?></td>
                                 <td>
-                                    <a class="btn btn-primary waves-effect waves-light" href="edit_berita.php?id=<?php echo $d['id']; ?>" role="button"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-primary waves-effect waves-light" target="_blank" href="../event.php?id=<?php echo $d['id']; ?>" role="button"><i class="fa fa-eye"></i></a>
                                     <a class="btn btn-warning waves-effect waves-light" href="edit_berita.php?id=<?php echo $d['id']; ?>" role="button"><i class="fa fa-edit"></i></a>
                                     <a class="btn btn-danger waves-effect waves-light" href="hapus-event.php?id=<?php echo $d['id']; ?>" role="button" onclick="return confirm('Apakah Anda yakin ingin menghapus event ini?')"><i class="fa fa-trash"></i></a>
                                 </td>

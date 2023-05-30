@@ -1,30 +1,30 @@
 <?php
 session_start();
 
-// Periksa apakah pengguna telah login
-if (!isset($_SESSION['admin']) && !isset($_SESSION['level'])) {
-    header('Location: login.php');
+// Periksa apakah pengguna sudah login
+if (!isset($_SESSION['admin']) || !isset($_SESSION['level'])) {
+    // Pengguna belum login, arahkan ke halaman login
+    header("Location: login.php");
     exit();
 }
 
-// Periksa level pengguna untuk menentukan header yang digunakan
-if (isset($_SESSION['level'])) {
-    if ($_SESSION['level'] === 'author') {
-        include 'header2.php'; // Gunakan header2.php untuk level author
-    } else {
-        include 'header.php'; // Gunakan header1.php untuk level admin
-    }
-}else {
+// Periksa apakah pengguna sudah login dan memiliki level admin
+if ($_SESSION['admin'] == 1 && $_SESSION['level'] == 'admin') {
+    // Pengguna memiliki level admin, tampilkan konten halaman tambah_event.php di sini
+    // ...
+    // ...
+    // Tambahkan kode HTML atau PHP untuk menampilkan konten halaman tambah_event.php
+    echo "Selamat datang di halaman tambah_event.php. Hanya admin yang dapat mengakses halaman ini.";
+} else {
     // Pengguna tidak memiliki level admin, arahkan kembali ke halaman tolak.php
     header("Location: tolak.php");
     exit();
 }
 
+include 'header.php';
+include 'koneksi.php';
+?>
 
-// Level pengguna adalah admin, tampilkan header yang sesuai
-
-
-include 'koneksi.php';?>
 
 <head>
     <!-- TinyMCE -->
@@ -35,6 +35,10 @@ include 'koneksi.php';?>
 	
 	<!-- Must include this script FIRST -->
 	<script src="assets/plugin/tinymce/tinymce.min.js"></script>
+
+  <!-- Datepicker -->
+<link rel="stylesheet" href="assets/plugin/datepicker/css/bootstrap-datepicker.min.css">
+  
 </head>
 
 
@@ -51,19 +55,23 @@ include 'koneksi.php';?>
 
    <!-- Konten halaman lainnya -->
    <div class="row">
-   <form action="proses-tambah-artikel.php" method="POST" enctype="multipart/form-data">
+
+   <?php $query= mysqli_query($connection, "SELECT * from sejarah_iccn where id='1'");
+    $siswa = mysqli_fetch_assoc($query); ?>
+
+   <form action="proses-ubah_sejarah.php" method="POST" enctype="multipart/form-data">
     <div class="col-lg-6 col-xs-12">
         <div class="box-content card white">
-            <h4 class="box-title">Tambah Artikel</h4>
+            <h4 class="box-title">Tambah Event</h4>
             <!-- /.box-title -->
             <div class="card-content">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Judul Artikel</label>
-                        <input type="text" name="judul" class="form-control" id="exampleInputEmail1" placeholder="" required>
+                        <label for="exampleInputEmail1">Judul</label>
+                        <input type="text" name="judul" class="form-control" id="exampleInputEmail1" placeholder="" value="<?php echo $siswa['judul']; ?>" required>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Isi Artikel</label>
-                        <textarea id="tinymce" name="teks_berita"></textarea>
+                        <label for="exampleInputPassword1">Keterangan</label>
+                        <textarea id="tinymce" name="keterangan"><?php echo $siswa['keterangan']; ?></textarea>
                     </div>
                 </div>
                 <!-- /.card-content -->
@@ -80,15 +88,17 @@ include 'koneksi.php';?>
                         <div class="form-group">
                             <!-- <label for="exampleInputFile">Gambar Banner</label>
                             <p>Sebaiknya ukuran gambar 1800 x 560</p> -->
-                            <input name="gambar" type="file" id="input-file-to-destroy" class="dropify" data-max-file-size="2M" required>
+                            <input name="gambar" type="file" id="input-file-to-destroy" class="dropify" data-max-file-size="2M">
                         </div>
                     </div>
                     <!-- /.card-content -->
+
                 </div>
+                
                 <!-- /.box-content -->
                 <div class="text-right">
                     <button type="reset" class="btn btn-warning btn-sm waves-effect waves-light">Reset</button>
-                    <button type="submit" class="btn btn-primary btn-sm waves-effect waves-light" name="simpan">Simpan</button>
+                    <button type="submit" class="btn btn-primary btn-sm waves-effect waves-light" name="simpan">Update</button>
                 </div>
             
         </div>
@@ -155,5 +165,79 @@ include 'koneksi.php';?>
 	<script src="assets/scripts/fileUpload.demo.min.js"></script>
 
 	<script src="assets/scripts/main.min.js"></script>
+
+  <script>
+    var marker;
+
+    // Memanggil fungsi inisialisasi peta setelah halaman dimuat
+    window.onload = function() {
+      // Koordinat lokasi yang akan ditampilkan pada peta
+      var myLatLng = L.latLng(-6.1754, 106.8272);
+
+      // Membuat objek peta baru
+      var map = L.map('map').setView(myLatLng, 12);
+
+      
+
+      // Menambahkan tile layer dari penyedia peta OpenStreetMap
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      // Menambahkan penanda awal pada peta
+      marker = L.marker(myLatLng, { draggable: true }).addTo(map)
+        .bindPopup('Lokasi')
+        .openPopup();
+
+      // Mengikuti perubahan posisi marker
+      marker.on('dragend', function(event) {
+        var position = marker.getLatLng();
+        updateCoordinatesField(position);
+      });
+
+      // Inisialisasi field dengan koordinat awal
+      updateCoordinatesField(myLatLng);
+    };
+
+    // Fungsi untuk memindahkan marker ke koordinat yang dimasukkan pengguna
+    function moveMarker() {
+      var coordinatesField = document.getElementById('coordinates');
+      var coordinates = coordinatesField.value.split(',');
+
+      if (coordinates.length === 2) {
+        var lat = parseFloat(coordinates[0].trim());
+        var lng = parseFloat(coordinates[1].trim());
+
+        if (!isNaN(lat) && !isNaN(lng)) {
+          var position = L.latLng(lat, lng);
+          marker.setLatLng(position);
+          marker.getPopup().setContent(position.toString()).update();
+          marker.openPopup();
+          updateCoordinatesField(position);
+        } else {
+          alert('Koordinat tidak valid!');
+        }
+      } else {
+        alert('Masukkan koordinat dalam format yang benar!');
+      }
+    }
+
+    // Fungsi untuk mengisi field dengan koordinat latitude dan longitude
+    function updateCoordinatesField(position) {
+      var coordinatesField = document.getElementById('coordinates');
+      coordinatesField.value = position.lat.toFixed(6) + ', ' + position.lng.toFixed(6);
+    }
+  </script>
+
+<script src="assets/plugin/datepicker/js/bootstrap-datepicker.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#datepicker').datepicker();
+    });
+  </script>
+  
+  
+  <!-- Memuat pustaka Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
 </body>

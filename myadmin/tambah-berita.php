@@ -14,6 +14,10 @@ if (isset($_SESSION['level'])) {
     } else {
         include 'header.php'; // Gunakan header1.php untuk level admin
     }
+}else {
+    // Pengguna tidak memiliki level admin, arahkan kembali ke halaman tolak.php
+    header("Location: tolak.php");
+    exit();
 }
 
 include 'koneksi.php'; ?>

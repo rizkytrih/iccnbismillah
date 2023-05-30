@@ -145,7 +145,7 @@ if (!in_array($userLevel, $allowedLevels)) {
 				<li>
 					<a class="waves-effect parent-item js__control" href="#"><i class="menu-icon ti-layout-accordion-merged"></i><span>About</span><span class="menu-arrow fa fa-angle-down"></span></a>
 					<ul class="sub-menu js__content">
-						<li><a href="tables-basic.html">Sejarah</a></li>
+						<li><a href="ubah_sejarah.php">Sejarah</a></li>
 						<li><a href="tables-datatable.html">Pengurus</a></li>
 						<li><a href="tables-responsive.html">Anggota ICCN</a></li>
 					</ul>

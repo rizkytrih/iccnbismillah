@@ -1,15 +1,22 @@
 <?php
 session_start();
 
+// Periksa apakah pengguna sudah login
+if (!isset($_SESSION['admin']) || !isset($_SESSION['level'])) {
+    // Pengguna belum login, arahkan ke halaman login
+    header("Location: login.php");
+    exit();
+}
+
 // Periksa apakah pengguna sudah login dan memiliki level admin
-if(isset($_SESSION['admin']) && $_SESSION['admin'] == 1 && isset($_SESSION['level']) && $_SESSION['level'] == 'admin') {
+if ($_SESSION['admin'] == 1 && $_SESSION['level'] == 'admin') {
     // Pengguna memiliki level admin, tampilkan konten halaman tambah_event.php di sini
     // ...
     // ...
     // Tambahkan kode HTML atau PHP untuk menampilkan konten halaman tambah_event.php
     echo "Selamat datang di halaman tambah_event.php. Hanya admin yang dapat mengakses halaman ini.";
 } else {
-    // Pengguna tidak memiliki level admin, arahkan kembali ke halaman login
+    // Pengguna tidak memiliki level admin, arahkan kembali ke halaman tolak.php
     header("Location: tolak.php");
     exit();
 }
@@ -50,11 +57,9 @@ $search = isset($_GET['search']) ? $_GET['search'] : '';
                 <table class="table">
                     <thead>
                         <tr>
-                            <th width="25%">Nama</th>
-                            <th width="5%">Username</th>
-                            <th width="15%">Email</th>
-                            <th width="15%">No Hp</th>
-                            <th width="15%">Foto</th>
+                            <th width="25%">Nama Univ</th>
+                            <th width="5%">Link Univ</th>
+                            <th width="15%">Gambar Univ</th>
                             <th width="15%">Action</th>
                         </tr>
                     </thead>
@@ -63,9 +68,9 @@ $search = isset($_GET['search']) ? $_GET['search'] : '';
                         $results_per_page = 6;
 
                         if (!empty($search)) {
-                            $query = "SELECT * FROM admin WHERE nama_awal LIKE '%$search%' ORDER BY tgl_post DESC";
+                            $query = "SELECT * FROM member_iccn WHERE nama_univ LIKE '%$search%'";
                         } else {
-                            $query = "SELECT * FROM admin ORDER BY tgl_post DESC";
+                            $query = "SELECT * FROM member_iccn";
                         }
 
                         $result = mysqli_query($connection, $query);
@@ -87,15 +92,13 @@ $search = isset($_GET['search']) ? $_GET['search'] : '';
                         ?>
 
                             <tr>
-                                <td><?php echo $d['nama_awal']; ?> <?php echo $d['nama_akhir']; ?></td>
-                                <td><?php echo $d['username']; ?></td>
-                                <td><?php echo $d['email']; ?></td>
-                                <td><?php echo $d['no_hp']; ?></td>
-                                <td><img src="gambar/acara/<?php echo $d['gambar_event']; ?>"></td>
+                                <td><?php echo $d['nama_univ']; ?></td>
+                                <td><?php echo $d['link_univ']; ?></td>
+                                <td><img src="gambar/acara/<?php echo $d['gambar_univ']; ?>"></td>
                                 <td>
-                                    <a class="btn btn-primary waves-effect waves-light" href="edit_berita.php?id=<?php echo $d['id_admin']; ?>" role="button"><i class="fa fa-eye"></i></a>
-                                    <a class="btn btn-warning waves-effect waves-light" href="edit_berita.php?id=<?php echo $d['id_admin']; ?>" role="button"><i class="fa fa-edit"></i></a>
-                                    <a class="btn btn-danger waves-effect waves-light" href="edit_berita.php?id=<?php echo $d['id_admin']; ?>" role="button"><i class="fa fa-trash"></i></a>
+                                    <a class="btn btn-primary waves-effect waves-light" href="edit_member.php?id=<?php echo $d['id_univ']; ?>" role="button"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-warning waves-effect waves-light" href="edit_member.php?id=<?php echo $d['id_univ']; ?>" role="button"><i class="fa fa-edit"></i></a>
+                                    <a class="btn btn-danger waves-effect waves-light" href="edit_member.php?id=<?php echo $d['id_univ']; ?>" role="button"><i class="fa fa-trash"></i></a>
                                 </td>
                             </tr>
                         <?php

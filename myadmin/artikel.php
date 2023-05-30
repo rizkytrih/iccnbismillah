@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 
 // Periksa apakah pengguna telah login
@@ -15,6 +14,10 @@ if (isset($_SESSION['level'])) {
     } else {
         include 'header.php'; // Gunakan header1.php untuk level admin
     }
+}else {
+    // Pengguna tidak memiliki level admin, arahkan kembali ke halaman tolak.php
+    header("Location: tolak.php");
+    exit();
 }
 
 include 'koneksi.php';
@@ -92,7 +95,7 @@ $search = isset($_GET['search']) ? $_GET['search'] : '';
                                 <td><?php echo $d['tgl_posting']; ?></td>
                                 <td><?php echo $d['nama_awal']; ?> <?php echo $d['nama_akhir']; ?></td>
                                 <td>
-                                    <a class="btn btn-primary waves-effect waves-light" href="lihat-artikel.php?id=<?php echo $d['id_berita']; ?>" role="button"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-primary waves-effect waves-light" target="_blank" href="../artikel.php?id=<?php echo $d['id_berita']; ?>" role="button"><i class="fa fa-eye"></i></a>
                                     <a class="btn btn-warning waves-effect waves-light" href="edit_artikel.php?id=<?php echo $d['id_berita']; ?>" role="button"><i class="fa fa-edit"></i></a>
                                     <a class="btn btn-danger waves-effect waves-light" href="hapus-artiber.php?id=<?php echo $d['id_berita']; ?>" role="button" onclick="return confirm('Apakah Anda yakin ingin menghapus artikel ini?')"><i class="fa fa-trash"></i></a>
                                 </td>
