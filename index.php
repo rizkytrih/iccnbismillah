@@ -73,7 +73,7 @@
 				<hr class="lg">
 
 				<div class="row">
-					<div class="content col-md-8 col-md-offset-1 col-md-push-3">
+					<div class="content col-md-8 col-md-offset-1 col-md-pull-1">
 
 						<!-- World News Category -->
 						<h2>Artikel</h2>
