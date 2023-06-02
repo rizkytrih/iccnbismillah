@@ -47,6 +47,18 @@
 
 <body>
     <!-- Header / Bagian Atas -->
+    	<!-- Page Heading -->
+			<section class="page-heading">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<h1>Berita</h1>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Page Heading / End -->
+
 
     <!-- Konten Utama -->
     <div class="main" role="main">
@@ -56,7 +68,6 @@
                 <div class="content col-md-9 col-md-offset-0">
                     <div class="container">
                         <!-- Bagian Berita -->
-                        <h2>Berita</h2>
                         <div class="row">
                             <?php foreach ($news as $index => $row) { ?>
                                 <div class="col-md-4">
@@ -102,13 +113,12 @@
                         </div>
 
                         <!-- Bagian Berita / End -->
-
-                        <ul class="pagination pagination-custom">
-                            <li><a href="#" class="btn btn-sm btn-primary">1</a></li>
-                            <li><a href="#" class="btn btn-sm btn-default">2</a></li>
-                            <li><a href="#" class="btn btn-sm btn-default">3</a></li>
-                            <li><a href="#" class="btn btn-sm btn-default">&raquo;</a></li>
-                        </ul>
+                        <ul class="pagination-custom list-unstyled list-inline">
+								<li><a href="#" class="btn btn-sm btn-primary">1</a></li>
+								<li><a href="#" class="btn btn-sm btn-default">2</a></li>
+								<li><a href="#" class="btn btn-sm btn-default">3</a></li>
+								<li><a href="#" class="btn btn-sm btn-default">&raquo;</a></li>
+							</ul>
                     </div>
                 </div>
                 <aside class="sidebar col-md-3 col-md-pull-9 col-bordered">

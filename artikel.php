@@ -21,6 +21,18 @@
 		<!-- Main -->
 		<div class="main" role="main">
 
+			<!-- Page Heading -->
+			<section class="page-heading">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<h1>Artikel</h1>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Page Heading / End -->
+
 
 <div class="container">
         <div class="spacer-lg"></div>
@@ -28,7 +40,6 @@
 						<div class="content col-md-7 col-md-offset-0">
                             <div class="container">
 							<!-- World News Category -->
-							<h2>Artikel</h2>
 							<div class="row">
 								<div class="col-md-4">
 									<!-- Post (Standard Format) -->

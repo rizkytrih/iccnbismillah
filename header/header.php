@@ -71,7 +71,7 @@
 		
 		<!-- Header -->
 		<header class="header header-default">
-
+<!-- 
 			<div class="header-top">
 				<div class="container">
 					<div class="header-top-left">
@@ -90,7 +90,7 @@
 						</span>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<div class="header-main">
 				<div class="container">
 					<nav class="navbar navbar-default fhmm" role="navigation">

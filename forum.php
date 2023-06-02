@@ -79,12 +79,6 @@
 						<div class="col-md-6">
 							<h1>Forums</h1>
 						</div>
-						<div class="col-md-6">
-							<ul class="breadcrumb">
-								<li><a href="index.html">Home</a></li>
-								<li class="active">Forums</li>
-							</ul>
-						</div>
 					</div>
 				</div>
 			</section>

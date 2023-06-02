@@ -10,6 +10,18 @@
 	<div class="site-wrapper">
 		<!-- Main -->
 		<div class="main" role="main">
+			<!-- Page Heading -->
+			<section class="page-heading">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<h1>Event</h1>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Page Heading / End -->
+
 			<!-- Page Content -->
 			<section class="page-content">
 				<div class="container">
